@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Office lock files
+~$*
+
+# Large media (GitHub warns over 50 MB); keep locally
+*.mp4

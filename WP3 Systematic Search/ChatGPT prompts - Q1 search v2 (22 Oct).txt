@@ -1,0 +1,153 @@
+PROMPT A — combined lines + seed check (send first)
+
+I am building a systematic review search in PubMed. Please run each numbered query below in PubMed and give me its hit count.
+
+Rules:
+- Run every query live in PubMed (pubmed.ncbi.nlm.nih.gov), or through the NCBI E-utilities count URL: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&rettype=count&term=<URL-encoded query>
+- Paste each query exactly as written. Do not change, add or drop any terms.
+- Report the exact count PubMed returns. Never estimate or guess. If a query fails or you cannot reach PubMed, write "NOT RUN" for that line and tell me why.
+- No date, language or study-type filters.
+- Reply only with a table: Line | Query (first 60 characters) | Count. Then add one line with today's date and whether every count came from a live search.
+
+Queries:
+A1 (P1 long-term care, all terms OR'd): ("Long-Term Care"[Mesh] OR "Insurance, Long-Term Care"[Mesh] OR "Nursing Homes"[Mesh] OR "Homes for the Aged"[Mesh] OR "Home Care Services"[Mesh] OR "Assisted Living Facilities"[Mesh] OR "long-term care"[tiab] OR "long term care"[tiab] OR "long-term services and supports"[tiab] OR "long term services and supports"[tiab] OR LTSS[tiab] OR LTCI[tiab] OR "residential care"[tiab] OR "institutional care"[tiab] OR "nursing home*"[tiab] OR "care home*"[tiab] OR "aged care"[tiab] OR "home care"[tiab] OR "home-based care"[tiab] OR "home and community-based services"[tiab] OR "home and community based services"[tiab] OR "social care"[tiab] OR "continuing care"[tiab])
+
+A2 (P2 IMC/post-acute, all terms OR'd): ("Subacute Care"[Mesh] OR "Transitional Care"[Mesh] OR "Patient Discharge"[Mesh] OR "intermediate care"[tiab] OR "post-acute"[tiab] OR postacute[tiab] OR "subacute care"[tiab] OR "sub-acute care"[tiab] OR "transitional care"[tiab] OR "care transition*"[tiab] OR "transition of care"[tiab] OR "transitions of care"[tiab] OR "step-down care"[tiab] OR "step down care"[tiab] OR reablement[tiab] OR "geriatric rehabilitation"[tiab] OR "hospital discharge"[tiab] OR "discharge planning"[tiab])
+
+A3 (E criteria and tools, all terms OR'd): ("Needs Assessment"[Mesh] OR "Disability Evaluation"[Mesh] OR "needs assessment*"[tiab] OR "need assessment*"[tiab] OR "assessment tool*"[tiab] OR "assessment instrument*"[tiab] OR "assessment scale*"[tiab] OR "assessment system*"[tiab] OR "assessment framework*"[tiab] OR "screening tool*"[tiab] OR "screening instrument*"[tiab] OR "decision rule*"[tiab] OR "decision tool*"[tiab] OR "decision support"[tiab] OR "grading system*"[tiab] OR "classification system*"[tiab] OR "classification tool*"[tiab] OR "scoring system*"[tiab] OR "eligibility criteria"[tiab] OR "case-mix"[tiab] OR casemix[tiab] OR interRAI[tiab] OR "MDS-HC"[tiab] OR "RAI-HC"[tiab] OR "Method for Assigning Priority Levels"[tiab] OR "Resource Utilization Group*"[tiab] OR "RUG-III"[tiab] OR "Kihon Checklist"[tiab] OR "Aged Care Assessment"[tiab] OR "AN-ACC"[tiab] OR Pflegegrad*[tiab])
+
+A4 (O eligibility/care-level decision, all terms OR'd): ("Eligibility Determination"[Mesh] OR eligib*[tiab] OR ineligib*[tiab] OR entitle*[tiab] OR certif*[tiab] OR gatekeep*[tiab] OR "care need*"[tiab] OR "service need*"[tiab] OR "care requirement*"[tiab] OR "level of care"[tiab] OR "levels of care"[tiab] OR "care level*"[tiab] OR "care intensity"[tiab] OR "care allocation"[tiab] OR "service allocation"[tiab] OR "resource allocation"[tiab] OR "care placement"[tiab] OR "placement decision*"[tiab] OR "care decision*"[tiab] OR "admission criteri*"[tiab] OR "access criteri*"[tiab] OR "needs-based"[tiab] OR "need-based"[tiab])
+
+A5 (final combination): (("Long-Term Care"[Mesh] OR "Insurance, Long-Term Care"[Mesh] OR "Nursing Homes"[Mesh] OR "Homes for the Aged"[Mesh] OR "Home Care Services"[Mesh] OR "Assisted Living Facilities"[Mesh] OR "long-term care"[tiab] OR "long term care"[tiab] OR "long-term services and supports"[tiab] OR "long term services and supports"[tiab] OR LTSS[tiab] OR LTCI[tiab] OR "residential care"[tiab] OR "institutional care"[tiab] OR "nursing home*"[tiab] OR "care home*"[tiab] OR "aged care"[tiab] OR "home care"[tiab] OR "home-based care"[tiab] OR "home and community-based services"[tiab] OR "home and community based services"[tiab] OR "social care"[tiab] OR "continuing care"[tiab]) OR ("Subacute Care"[Mesh] OR "Transitional Care"[Mesh] OR "Patient Discharge"[Mesh] OR "intermediate care"[tiab] OR "post-acute"[tiab] OR postacute[tiab] OR "subacute care"[tiab] OR "sub-acute care"[tiab] OR "transitional care"[tiab] OR "care transition*"[tiab] OR "transition of care"[tiab] OR "transitions of care"[tiab] OR "step-down care"[tiab] OR "step down care"[tiab] OR reablement[tiab] OR "geriatric rehabilitation"[tiab] OR "hospital discharge"[tiab] OR "discharge planning"[tiab])) AND ("Needs Assessment"[Mesh] OR "Disability Evaluation"[Mesh] OR "needs assessment*"[tiab] OR "need assessment*"[tiab] OR "assessment tool*"[tiab] OR "assessment instrument*"[tiab] OR "assessment scale*"[tiab] OR "assessment system*"[tiab] OR "assessment framework*"[tiab] OR "screening tool*"[tiab] OR "screening instrument*"[tiab] OR "decision rule*"[tiab] OR "decision tool*"[tiab] OR "decision support"[tiab] OR "grading system*"[tiab] OR "classification system*"[tiab] OR "classification tool*"[tiab] OR "scoring system*"[tiab] OR "eligibility criteria"[tiab] OR "case-mix"[tiab] OR casemix[tiab] OR interRAI[tiab] OR "MDS-HC"[tiab] OR "RAI-HC"[tiab] OR "Method for Assigning Priority Levels"[tiab] OR "Resource Utilization Group*"[tiab] OR "RUG-III"[tiab] OR "Kihon Checklist"[tiab] OR "Aged Care Assessment"[tiab] OR "AN-ACC"[tiab] OR Pflegegrad*[tiab]) AND ("Eligibility Determination"[Mesh] OR eligib*[tiab] OR ineligib*[tiab] OR entitle*[tiab] OR certif*[tiab] OR gatekeep*[tiab] OR "care need*"[tiab] OR "service need*"[tiab] OR "care requirement*"[tiab] OR "level of care"[tiab] OR "levels of care"[tiab] OR "care level*"[tiab] OR "care intensity"[tiab] OR "care allocation"[tiab] OR "service allocation"[tiab] OR "resource allocation"[tiab] OR "care placement"[tiab] OR "placement decision*"[tiab] OR "care decision*"[tiab] OR "admission criteri*"[tiab] OR "access criteri*"[tiab] OR "needs-based"[tiab] OR "need-based"[tiab]) NOT ("Animals"[Mesh] NOT "Humans"[Mesh])
+
+A6 (seed check: how many of 10 known papers the final search finds): ((("Long-Term Care"[Mesh] OR "Insurance, Long-Term Care"[Mesh] OR "Nursing Homes"[Mesh] OR "Homes for the Aged"[Mesh] OR "Home Care Services"[Mesh] OR "Assisted Living Facilities"[Mesh] OR "long-term care"[tiab] OR "long term care"[tiab] OR "long-term services and supports"[tiab] OR "long term services and supports"[tiab] OR LTSS[tiab] OR LTCI[tiab] OR "residential care"[tiab] OR "institutional care"[tiab] OR "nursing home*"[tiab] OR "care home*"[tiab] OR "aged care"[tiab] OR "home care"[tiab] OR "home-based care"[tiab] OR "home and community-based services"[tiab] OR "home and community based services"[tiab] OR "social care"[tiab] OR "continuing care"[tiab]) OR ("Subacute Care"[Mesh] OR "Transitional Care"[Mesh] OR "Patient Discharge"[Mesh] OR "intermediate care"[tiab] OR "post-acute"[tiab] OR postacute[tiab] OR "subacute care"[tiab] OR "sub-acute care"[tiab] OR "transitional care"[tiab] OR "care transition*"[tiab] OR "transition of care"[tiab] OR "transitions of care"[tiab] OR "step-down care"[tiab] OR "step down care"[tiab] OR reablement[tiab] OR "geriatric rehabilitation"[tiab] OR "hospital discharge"[tiab] OR "discharge planning"[tiab])) AND ("Needs Assessment"[Mesh] OR "Disability Evaluation"[Mesh] OR "needs assessment*"[tiab] OR "need assessment*"[tiab] OR "assessment tool*"[tiab] OR "assessment instrument*"[tiab] OR "assessment scale*"[tiab] OR "assessment system*"[tiab] OR "assessment framework*"[tiab] OR "screening tool*"[tiab] OR "screening instrument*"[tiab] OR "decision rule*"[tiab] OR "decision tool*"[tiab] OR "decision support"[tiab] OR "grading system*"[tiab] OR "classification system*"[tiab] OR "classification tool*"[tiab] OR "scoring system*"[tiab] OR "eligibility criteria"[tiab] OR "case-mix"[tiab] OR casemix[tiab] OR interRAI[tiab] OR "MDS-HC"[tiab] OR "RAI-HC"[tiab] OR "Method for Assigning Priority Levels"[tiab] OR "Resource Utilization Group*"[tiab] OR "RUG-III"[tiab] OR "Kihon Checklist"[tiab] OR "Aged Care Assessment"[tiab] OR "AN-ACC"[tiab] OR Pflegegrad*[tiab]) AND ("Eligibility Determination"[Mesh] OR eligib*[tiab] OR ineligib*[tiab] OR entitle*[tiab] OR certif*[tiab] OR gatekeep*[tiab] OR "care need*"[tiab] OR "service need*"[tiab] OR "care requirement*"[tiab] OR "level of care"[tiab] OR "levels of care"[tiab] OR "care level*"[tiab] OR "care intensity"[tiab] OR "care allocation"[tiab] OR "service allocation"[tiab] OR "resource allocation"[tiab] OR "care placement"[tiab] OR "placement decision*"[tiab] OR "care decision*"[tiab] OR "admission criteri*"[tiab] OR "access criteri*"[tiab] OR "needs-based"[tiab] OR "need-based"[tiab]) NOT ("Animals"[Mesh] NOT "Humans"[Mesh])) AND (15743300[pmid] OR 12145374[pmid] OR 15498843[pmid] OR 23869339[pmid] OR 18366782[pmid] OR 38037101[pmid] OR 18191276[pmid] OR 20510982[pmid] OR 18781503[pmid] OR 38667450[pmid])
+For A6, also list which of these PMIDs were found and which were missed: 15743300, 12145374, 15498843, 23869339, 18366782, 38037101, 18191276, 20510982, 18781503, 38667450.
+
+
+=====
+PROMPT B — single-term counts, P1 and P2
+
+I am building a systematic review search in PubMed. Please run each numbered term below on its own in PubMed and give me its hit count, so I can see which terms are broad or noisy.
+
+Rules:
+- Run every query live in PubMed (pubmed.ncbi.nlm.nih.gov), or through the NCBI E-utilities count URL: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&rettype=count&term=<URL-encoded query>
+- Paste each query exactly as written. Do not change, add or drop any terms.
+- Report the exact count PubMed returns. Never estimate or guess. If a query fails or you cannot reach PubMed, write "NOT RUN" for that line and tell me why.
+- No date, language or study-type filters.
+- Reply only with a table: Line | Query (first 60 characters) | Count. Then add one line with today's date and whether every count came from a live search.
+
+P1, long-term care (terms 1-23):
+1. "Long-Term Care"[Mesh]
+2. "Insurance, Long-Term Care"[Mesh]
+3. "Nursing Homes"[Mesh]
+4. "Homes for the Aged"[Mesh]
+5. "Home Care Services"[Mesh]
+6. "Assisted Living Facilities"[Mesh]
+7. "long-term care"[tiab]
+8. "long term care"[tiab]
+9. "long-term services and supports"[tiab]
+10. "long term services and supports"[tiab]
+11. LTSS[tiab]
+12. LTCI[tiab]
+13. "residential care"[tiab]
+14. "institutional care"[tiab]
+15. "nursing home*"[tiab]
+16. "care home*"[tiab]
+17. "aged care"[tiab]
+18. "home care"[tiab]
+19. "home-based care"[tiab]
+20. "home and community-based services"[tiab]
+21. "home and community based services"[tiab]
+22. "social care"[tiab]
+23. "continuing care"[tiab]
+
+P2, IMC / post-acute / transitional care (terms 24-41):
+24. "Subacute Care"[Mesh]
+25. "Transitional Care"[Mesh]
+26. "Patient Discharge"[Mesh]
+27. "intermediate care"[tiab]
+28. "post-acute"[tiab]
+29. postacute[tiab]
+30. "subacute care"[tiab]
+31. "sub-acute care"[tiab]
+32. "transitional care"[tiab]
+33. "care transition*"[tiab]
+34. "transition of care"[tiab]
+35. "transitions of care"[tiab]
+36. "step-down care"[tiab]
+37. "step down care"[tiab]
+38. reablement[tiab]
+39. "geriatric rehabilitation"[tiab]
+40. "hospital discharge"[tiab]
+41. "discharge planning"[tiab]
+
+
+=====
+PROMPT C — single-term counts, E and O
+
+I am building a systematic review search in PubMed. Please run each numbered term below on its own in PubMed and give me its hit count, so I can see which terms are broad or noisy.
+
+Rules:
+- Run every query live in PubMed (pubmed.ncbi.nlm.nih.gov), or through the NCBI E-utilities count URL: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&rettype=count&term=<URL-encoded query>
+- Paste each query exactly as written. Do not change, add or drop any terms.
+- Report the exact count PubMed returns. Never estimate or guess. If a query fails or you cannot reach PubMed, write "NOT RUN" for that line and tell me why.
+- No date, language or study-type filters.
+- Reply only with a table: Line | Query (first 60 characters) | Count. Then add one line with today's date and whether every count came from a live search.
+
+E, criteria and assessment tools (terms 42-72):
+42. "Needs Assessment"[Mesh]
+43. "Disability Evaluation"[Mesh]
+44. "needs assessment*"[tiab]
+45. "need assessment*"[tiab]
+46. "assessment tool*"[tiab]
+47. "assessment instrument*"[tiab]
+48. "assessment scale*"[tiab]
+49. "assessment system*"[tiab]
+50. "assessment framework*"[tiab]
+51. "screening tool*"[tiab]
+52. "screening instrument*"[tiab]
+53. "decision rule*"[tiab]
+54. "decision tool*"[tiab]
+55. "decision support"[tiab]
+56. "grading system*"[tiab]
+57. "classification system*"[tiab]
+58. "classification tool*"[tiab]
+59. "scoring system*"[tiab]
+60. "eligibility criteria"[tiab]
+61. "case-mix"[tiab]
+62. casemix[tiab]
+63. interRAI[tiab]
+64. "MDS-HC"[tiab]
+65. "RAI-HC"[tiab]
+66. "Method for Assigning Priority Levels"[tiab]
+67. "Resource Utilization Group*"[tiab]
+68. "RUG-III"[tiab]
+69. "Kihon Checklist"[tiab]
+70. "Aged Care Assessment"[tiab]
+71. "AN-ACC"[tiab]
+72. Pflegegrad*[tiab]
+
+O, eligibility / care-level decision (terms 73-95):
+73. "Eligibility Determination"[Mesh]
+74. eligib*[tiab]
+75. ineligib*[tiab]
+76. entitle*[tiab]
+77. certif*[tiab]
+78. gatekeep*[tiab]
+79. "care need*"[tiab]
+80. "service need*"[tiab]
+81. "care requirement*"[tiab]
+82. "level of care"[tiab]
+83. "levels of care"[tiab]
+84. "care level*"[tiab]
+85. "care intensity"[tiab]
+86. "care allocation"[tiab]
+87. "service allocation"[tiab]
+88. "resource allocation"[tiab]
+89. "care placement"[tiab]
+90. "placement decision*"[tiab]
+91. "care decision*"[tiab]
+92. "admission criteri*"[tiab]
+93. "access criteri*"[tiab]
+94. "needs-based"[tiab]
+95. "need-based"[tiab]

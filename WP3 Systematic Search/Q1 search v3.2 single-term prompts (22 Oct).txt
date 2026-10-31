@@ -1,0 +1,108 @@
+v3.2 single-term counts, part 1. Please run each numbered term below on its own in PubMed and give me its hit count.
+
+Rules:
+- Run every term live in PubMed (pubmed.ncbi.nlm.nih.gov), exactly as written. Do not change, add or drop anything.
+- Report the exact count PubMed returns. Never estimate. If a term fails or PubMed shows a notice (phrase not found or ignored), say so on that line.
+- No date, language or study-type filters.
+- Reply only with a table: Line | Term | Count. Then add one line with today's date and whether every count came from a live search.
+
+P1, long-term care (terms 1-20):
+1. "Long-Term Care"[Mesh]
+2. "Insurance, Long-Term Care"[Mesh]
+3. "Nursing Homes"[Mesh]
+4. "Homes for the Aged"[Mesh]
+5. "Home Care Services"[Mesh]
+6. "Assisted Living Facilities"[Mesh]
+7. "long-term care"[tiab]
+8. "long-term services and supports"[tiab]
+9. LTSS[tiab]
+10. LTCI[tiab]
+11. "residential care"[tiab]
+12. "institutional care"[tiab]
+13. "nursing home*"[tiab]
+14. "care home*"[tiab]
+15. "aged care"[tiab]
+16. "home care"[tiab]
+17. "home-based care"[tiab]
+18. "home and community-based services"[tiab]
+19. "social care"[tiab]
+20. "continuing care"[tiab]
+
+P2, IMC / post-acute / transitional care (terms 21-39):
+21. "Subacute Care"[Mesh]
+22. "Transitional Care"[Mesh]
+23. "Patient Discharge"[Mesh]
+24. "intermediate care"[tiab]
+25. "post-acute care"[tiab]
+26. "postacute care"[tiab]
+27. "subacute care"[tiab]
+28. "sub-acute care"[tiab]
+29. "transitional care"[tiab]
+30. "care transition*"[tiab]
+31. "transition of care"[tiab]
+32. "transitions of care"[tiab]
+33. "step-down care"[tiab]
+34. reablement[tiab]
+35. "geriatric rehabilitation"[tiab]
+36. "hospital discharge"[tiab]
+37. "discharge planning"[tiab]
+38. "post-discharge"[tiab]
+39. postdischarge[tiab]
+
+=====
+
+v3.2 single-term counts, part 2. Please run each numbered term below on its own in PubMed and give me its hit count.
+
+Rules:
+- Run every term live in PubMed (pubmed.ncbi.nlm.nih.gov), exactly as written. Do not change, add or drop anything.
+- Report the exact count PubMed returns. Never estimate. If a term fails or PubMed shows a notice (phrase not found or ignored), say so on that line.
+- No date, language or study-type filters.
+- Reply only with a table: Line | Term | Count. Then add one line with today's date and whether every count came from a live search.
+
+E, criteria and assessment tools (terms 40-60):
+40. "Needs Assessment"[Mesh]
+41. "Disability Evaluation"[Mesh]
+42. "needs assessment*"[tiab]
+43. "need assessment*"[tiab]
+44. "assessment tool*"[tiab]
+45. "assessment instrument*"[tiab]
+46. "assessment scale*"[tiab]
+47. "assessment system*"[tiab]
+48. "assessment framework*"[tiab]
+49. "screening tool*"[tiab]
+50. "screening instrument*"[tiab]
+51. "decision rule*"[tiab]
+52. "decision tool*"[tiab]
+53. "decision support"[tiab]
+54. "grading system*"[tiab]
+55. "classification system*"[tiab]
+56. "classification tool*"[tiab]
+57. "scoring system*"[tiab]
+58. "case-mix"[tiab]
+59. casemix[tiab]
+60. "eligibility criteria"[tiab]
+
+O, eligibility / care-level decision (terms 61-83):
+61. "Eligibility Determination"[Mesh]
+62. eligib*[tiab]
+63. ineligib*[tiab]
+64. entitlement*[tiab]
+65. certif*[tiab]
+66. gatekeep*[tiab]
+67. "care need*"[tiab]
+68. "service need*"[tiab]
+69. "care requirement*"[tiab]
+70. "level of care"[tiab]
+71. "levels of care"[tiab]
+72. "care level*"[tiab]
+73. "care intensity"[tiab]
+74. "care allocation"[tiab]
+75. "service allocation"[tiab]
+76. "resource allocation"[tiab]
+77. "care placement"[tiab]
+78. "placement decision*"[tiab]
+79. "care decision*"[tiab]
+80. "admission criteri*"[tiab]
+81. "access criteri*"[tiab]
+82. "needs-based"[tiab]
+83. "need-based"[tiab]
