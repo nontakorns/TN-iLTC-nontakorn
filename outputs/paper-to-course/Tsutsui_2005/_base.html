@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan LTCI Certification</title>
+
+  <!-- Google Fonts: Bricolage Grotesque · DM Sans · JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- INLINE_CSS -->
+
+  <!-- Course-level overrides: accent (teal), chat starts empty, dark mode tokens -->
+  <style>
+    :root {
+      --color-accent:       #2A7B9B;
+      --color-accent-hover: #1F6280;
+      --color-accent-light: #E4F2F7;
+      --color-accent-muted: #5A9DB8;
+    }
+    .chat-window .chat-message,
+    .chat-window .chat-typing { display: none; }
+    .claude-note { border-left-style: dashed; }
+    .level-table td:first-child { font-weight: 700; font-family: var(--font-display); }
+    .src { font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono); }
+    body { background: var(--color-bg); color: var(--color-text); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --color-bg: #191817; --color-bg-warm: #23211F; --color-surface: #1F1E1C; --color-surface-warm: #262422;
+        --color-text: #ECE8E2; --color-text-secondary: #B8B1A8; --color-text-muted: #8C857C;
+        --color-border: #3A3632; --color-border-light: #2E2B28;
+        --color-accent-light: #16313B; --color-success-light: #15301F; --color-error-light: #3A1C1C; --color-info-light: #16313B;
+      }
+    }
+    :root[data-theme="dark"] {
+      --color-bg: #191817; --color-bg-warm: #23211F; --color-surface: #1F1E1C; --color-surface-warm: #262422;
+      --color-text: #ECE8E2; --color-text-secondary: #B8B1A8; --color-text-muted: #8C857C;
+      --color-border: #3A3632; --color-border-light: #2E2B28;
+      --color-accent-light: #16313B; --color-success-light: #15301F; --color-error-light: #3A1C1C; --color-info-light: #16313B;
+    }
+  </style>
+
+  <script src="main.js" defer></script>
+  <!-- INLINE_JS -->
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="nav-inner">
+      <span class="nav-title">Japan LTCI Certification</span>
+      <div class="nav-dots" id="nav-dots" role="tablist">
+        <button class="nav-dot" data-target="module-1" data-tooltip="Problem &amp; motivation" role="tab" aria-label="Module 1: Problem and motivation"></button>
+        <button class="nav-dot" data-target="module-2" data-tooltip="How it was built" role="tab" aria-label="Module 2: How it was built"></button>
+        <button class="nav-dot" data-target="module-3" data-tooltip="Approaches compared" role="tab" aria-label="Module 3: Approaches compared"></button>
+        <button class="nav-dot" data-target="module-4" data-tooltip="The certification machine" role="tab" aria-label="Module 4: The certification machine"></button>
+        <button class="nav-dot" data-target="module-5" data-tooltip="Evidence &amp; results" role="tab" aria-label="Module 5: Evidence and results"></button>
+        <button class="nav-dot" data-target="module-6" data-tooltip="Limits &amp; lessons" role="tab" aria-label="Module 6: Limits and lessons"></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- MODULE_CONTENT -->

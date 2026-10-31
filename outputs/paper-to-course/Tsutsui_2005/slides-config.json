@@ -1,0 +1,449 @@
+{
+  "title": "Care-Needs Certification in Japan's LTCI System",
+  "subtitle": "Tsutsui & Muramatsu, J Am Geriatr Soc 2005;53:522-527",
+  "slides": [
+    {
+      "type": "title",
+      "title": "Care-Needs Certification in the Long-Term Care Insurance System of Japan",
+      "subtitle": "Tsutsui T, Muramatsu N. J Am Geriatr Soc 2005;53(3):522-527 (PMID 15743300)",
+      "note": "TN-iLTC WP3 seed paper #1 - journal club / 31 Oct version"
+    },
+    {
+      "type": "outline",
+      "title": "Outline",
+      "items": [
+        "Why Japan needed a new eligibility system",
+        "How the instrument was built (1995 time study, 1996-98 pilots)",
+        "Approaches compared: old Japan, RUG-III, professional judgment, Canada",
+        "The certification pipeline: 85 items -> care minutes -> 7 levels -> board",
+        "Evidence: reliability, concordance, early results",
+        "Challenges, lessons, critical appraisal, relevance for WP3"
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Before 2000: what was broken",
+      "layout": "cards-4",
+      "cards": [
+        {
+          "title": "Social hospitalisation",
+          "text": "Few nursing homes or home care; seniors stayed in hospital for years",
+          "color": "coral"
+        },
+        {
+          "title": "Means-tested welfare",
+          "text": "Tax-based LTC for low-income seniors with little family support; stigma, no provider competition",
+          "color": "blue"
+        },
+        {
+          "title": "Subjective eligibility",
+          "text": "Officials judged income and family case by case; criteria varied by area",
+          "color": "amber"
+        },
+        {
+          "title": "Political pressure",
+          "text": "Independent seniors admitted to nursing facilities",
+          "color": "purple"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "title": "The scale problem at launch (April 2000)",
+      "stats": [
+        {
+          "value": "2.8 M",
+          "label": "expected applicants",
+          "color": "coral",
+          "big": true
+        },
+        {
+          "value": "~3,000",
+          "label": "municipal insurers",
+          "color": "blue"
+        },
+        {
+          "value": "10%",
+          "label": "user copayment; rest 50% premiums / 50% taxes",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "title": "How the instrument was built",
+      "items": [
+        {
+          "year": "1989/94",
+          "title": "Gold Plan, New Gold Plan",
+          "desc": "Tax-based expansion of LTC services; municipalities plan services"
+        },
+        {
+          "year": "1995",
+          "title": "National time study",
+          "desc": "51 institutions, 2,376 caregivers, 3,800 seniors, ~10 M minutes, 328 activities"
+        },
+        {
+          "year": "to 1996",
+          "title": "RUG-III considered and dropped",
+          "desc": "Poor fit to Japanese resource use; needed MDS-trained nurses"
+        },
+        {
+          "year": "1996-98",
+          "title": "National model programmes",
+          "desc": "175,129 seniors; concordance 71.5% (1996), 75.3% (1997)"
+        },
+        {
+          "year": "2000/03",
+          "title": "Launch, then first revision",
+          "desc": "Beneficiaries 2.0 M -> 3.5 M; 2003 adds dementia indicator"
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Three design principles",
+      "layout": "cards-3",
+      "cards": [
+        {
+          "title": "Reproducible",
+          "text": "Any trained investigator gets similar results for the same applicant",
+          "color": "blue"
+        },
+        {
+          "title": "Questionnaire-only",
+          "text": "Results based strictly on questionnaire responses",
+          "color": "amber"
+        },
+        {
+          "title": "One standard unit",
+          "text": "Need expressed as estimated care minutes per day. Income, assets and family no longer count",
+          "color": "coral"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Approaches compared (as stated in the paper)",
+      "headers": [
+        "Approach",
+        "Basis",
+        "Assessor",
+        "Scope",
+        "Income/family?"
+      ],
+      "rows": [
+        [
+          "Japan pre-2000",
+          "Professional judgment",
+          "Local officials",
+          "Municipal",
+          "Yes"
+        ],
+        [
+          "RUG-III (USA)",
+          "Resource-use case-mix (MDS)",
+          "MDS-trained nurses",
+          "NH residents",
+          "Not stated"
+        ],
+        [
+          "Germany, Israel",
+          "Professional judgment",
+          "Professionals",
+          "National",
+          "Not stated"
+        ],
+        [
+          "Quebec / BC (Canada)",
+          "Care time / single entry",
+          "Assessors",
+          "Provincial",
+          "Not stated"
+        ],
+        [
+          "Japan LTCI 2000",
+          "85 items -> care minutes -> 7 levels + board",
+          "Trained lay officials",
+          "National",
+          "No"
+        ]
+      ],
+      "highlightRows": [
+        4
+      ]
+    },
+    {
+      "type": "flow",
+      "title": "The certification pipeline",
+      "steps": [
+        {
+          "num": 1,
+          "title": "Home visit",
+          "subtitle": "Trained official",
+          "desc": "After application: 85 items (73 physical/mental + 12 medical procedures) + notes"
+        },
+        {
+          "num": 2,
+          "title": "Computer",
+          "subtitle": "Tree regression",
+          "desc": "7 dimension scores -> minutes in 9 care categories -> level"
+        },
+        {
+          "num": 3,
+          "title": "Board",
+          "subtitle": "Mayor-appointed experts",
+          "desc": "Adds physician statement + assessor notes; may reassign, usually up; final"
+        },
+        {
+          "num": 4,
+          "title": "Care plan",
+          "subtitle": "Care manager",
+          "desc": "Services within the level's ceiling; 10% copay"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Questionnaire: 7 dimensions + medical procedures (Table 1)",
+      "headers": [
+        "Dimension",
+        "Items",
+        "Examples"
+      ],
+      "rows": [
+        [
+          "Paralysis & joint limitation",
+          "11",
+          "By body part"
+        ],
+        [
+          "Movement & balance",
+          "7",
+          "Turn, sit, stand, walk, transfer"
+        ],
+        [
+          "Complex movement",
+          "4",
+          "Stand up, one-foot stand, bath"
+        ],
+        [
+          "Special assistance",
+          "9",
+          "Bedsores, swallowing, toileting, eating"
+        ],
+        [
+          "ADL / IADL assistance",
+          "13",
+          "Hygiene, dressing, medication, money"
+        ],
+        [
+          "Communication & cognition",
+          "10",
+          "Vision, hearing, orientation, memory"
+        ],
+        [
+          "Behavioural problems",
+          "19",
+          "Wandering, hallucination, violence"
+        ],
+        [
+          "Medical procedures (14 days)",
+          "12",
+          "IV, dialysis, oxygen, tube feeding, catheter"
+        ]
+      ],
+      "highlightRows": []
+    },
+    {
+      "type": "formula",
+      "title": "The decision rule (Claude's schematic, not in the paper)",
+      "formula": "T = sum over k=1..9 of tree_k(s1..s7, m)  ->  Level = cut(T; 25, 30, 50, 70, 90, 110)",
+      "lines": [
+        {
+          "symbol": "s1..s7, m",
+          "english": "Scores on 7 physical/mental dimensions, plus use of 12 medical procedures"
+        },
+        {
+          "symbol": "tree_k",
+          "english": "Regression tree predicting daily minutes for care category k (fitted on 1995 institutional time study)"
+        },
+        {
+          "symbol": "T",
+          "english": "Total estimated care minutes per day = the standardized unit of need"
+        },
+        {
+          "symbol": "cut",
+          "english": "Table 2 thresholds; <25 min still 'need support' if rehab or IADL time >10 min"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "title": "Seven levels and benefit ceilings (Table 2, US$/month)",
+      "headers": [
+        "Level",
+        "Care min/day",
+        "Home & community",
+        "Institutional"
+      ],
+      "rows": [
+        [
+          "Not eligible",
+          "<= 25",
+          "0",
+          "Not eligible"
+        ],
+        [
+          "Need support",
+          "< 30",
+          "578",
+          "Not eligible"
+        ],
+        [
+          "Level 1",
+          "< 50",
+          "1,550",
+          "2,299"
+        ],
+        [
+          "Level 2 (Hana)",
+          "< 70",
+          "1,821",
+          "2,607"
+        ],
+        [
+          "Level 3",
+          "< 90",
+          "2,500",
+          "3,275"
+        ],
+        [
+          "Level 4",
+          "< 110",
+          "2,860",
+          "3,558"
+        ],
+        [
+          "Level 5",
+          ">= 110",
+          "3,349",
+          "3,813"
+        ]
+      ],
+      "highlightRows": [
+        3
+      ]
+    },
+    {
+      "type": "bars",
+      "title": "How often humans agree with the machine",
+      "subtitle": "Item interrater reliability; computer-professional concordance in the 1996 and 1997 pilots; board agreement with computer 2000-03. No ablation in this paper. The board most often moves people UP.",
+      "items": [
+        {
+          "label": "Interrater (item)",
+          "value": 90,
+          "valueText": "0.9",
+          "isBaseline": true
+        },
+        {
+          "label": "Pilot 1996",
+          "value": 71.5,
+          "valueText": "71.5%"
+        },
+        {
+          "label": "Pilot 1997",
+          "value": 75.3,
+          "valueText": "75.3%"
+        },
+        {
+          "label": "Board 2000-03",
+          "value": 70,
+          "valueText": "70%"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "title": "First three years",
+      "stats": [
+        {
+          "value": "3.5 M",
+          "label": "certified beneficiaries, Dec 2003 (2.0 M in 2000)",
+          "color": "coral",
+          "big": true
+        },
+        {
+          "value": "1/3",
+          "label": "of maximum possible service use actually demanded",
+          "color": "blue"
+        },
+        {
+          "value": "~80%",
+          "label": "of institutional residents classed as demented",
+          "color": "amber"
+        }
+      ]
+    },
+    {
+      "type": "limitations",
+      "title": "Challenges and lessons",
+      "limitations": [
+        "Local variation: leaders boast of raising levels; MHLW flags high-disagreement municipalities",
+        "Rising demand; institutions ($450-600/month out of pocket) can be cheaper than home",
+        "2003 dementia indicator traded for fee cuts -> incentive to label residents demented",
+        "Claude: validity = concordance only; 'ideal institution' yardstick; home-care data discarded; insider account"
+      ],
+      "futureWork": [
+        "Build the right incentives for seniors, families, providers, insurers",
+        "Add an item for expected / potential improvement in function",
+        "Promote preventive services; reward providers whose clients improve",
+        "Keep revising the model empirically (by law every 5 years) using the national data system"
+      ]
+    },
+    {
+      "type": "content",
+      "title": "Relevance for WP3 (Claude's suggestions - for Nontakorn to decide)",
+      "layout": "cards-3",
+      "cards": [
+        {
+          "title": "Extraction test row",
+          "text": "Clear domains, exclusions, tool, assessor, output, override, revision cycle; reassessment interval NOT reported",
+          "color": "blue"
+        },
+        {
+          "title": "Carer-context contrast",
+          "text": "Japan removed family/housing from the algorithm, yet the board re-adds it (rural isolation, violent spouse)",
+          "color": "coral"
+        },
+        {
+          "title": "Recovery potential",
+          "text": "Authors call for a 'potential for improvement' item - early version of a TN-iLTC criterion",
+          "color": "green"
+        }
+      ]
+    },
+    {
+      "type": "summary",
+      "title": "Take-home messages",
+      "items": [
+        {
+          "text": "Eligibility = physical + mental status only; income, assets, family removed",
+          "color": "coral"
+        },
+        {
+          "text": "85 items -> tree-regression care minutes -> 7 levels, assessed by trained lay officials",
+          "color": "blue"
+        },
+        {
+          "text": "A professional board reviews every case and agreed with the computer ~70% of the time",
+          "color": "amber"
+        },
+        {
+          "text": "Incentive design drove rising institutionalisation; evidence is agreement-based (insider account)",
+          "color": "purple"
+        }
+      ]
+    }
+  ]
+}

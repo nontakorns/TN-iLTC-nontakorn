@@ -1,0 +1,2772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Japan LTCI Certification</title>
+
+  <!-- Google Fonts: Bricolage Grotesque · DM Sans · JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  
+  <style>
+/* =============================================================
+   PAPER-TO-COURSE — COMPLETE DESIGN SYSTEM
+   Copy this file verbatim into the course output directory.
+   Never regenerate it — customize only via :root overrides
+   in _base.html (accent color only).
+   ============================================================= */
+
+/* ── GOOGLE FONTS (loaded via _base.html <head>) ───────────────
+   Bricolage Grotesque · DM Sans · JetBrains Mono
+   ──────────────────────────────────────────────────────────── */
+
+/* ── DESIGN TOKENS ─────────────────────────────────────────── */
+:root {
+  /* BACKGROUNDS */
+  --color-bg:             #FAF7F2;
+  --color-bg-warm:        #F5F0E8;
+  --color-bg-code:        #1E1E2E;
+  --color-text:           #2C2A28;
+  --color-text-secondary: #6B6560;
+  --color-text-muted:     #9E9790;
+  --color-border:         #E5DFD6;
+  --color-border-light:   #EEEBE5;
+  --color-surface:        #FFFFFF;
+  --color-surface-warm:   #FDF9F3;
+
+  /* ACCENT — overridden per course in _base.html */
+  --color-accent:         #D94F30;
+  --color-accent-hover:   #C4432A;
+  --color-accent-light:   #FDEEE9;
+  --color-accent-muted:   #E8836C;
+
+  /* SEMANTIC */
+  --color-success:        #2D8B55;
+  --color-success-light:  #E8F5EE;
+  --color-error:          #C93B3B;
+  --color-error-light:    #FDE8E8;
+  --color-info:           #2A7B9B;
+  --color-info-light:     #E4F2F7;
+
+  /* ACTOR COLORS */
+  --color-actor-1:        #D94F30;
+  --color-actor-2:        #2A7B9B;
+  --color-actor-3:        #7B6DAA;
+  --color-actor-4:        #D4A843;
+  --color-actor-5:        #2D8B55;
+
+  /* FONTS */
+  --font-display: 'Bricolage Grotesque', Georgia, serif;
+  --font-body:    'DM Sans', -apple-system, sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+
+  /* TYPE SCALE */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* LINE HEIGHTS */
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;
+  --leading-loose:  1.8;
+
+  /* SPACING */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* LAYOUT */
+  --content-width:      800px;
+  --content-width-wide: 1000px;
+  --nav-height:         50px;
+
+  /* RADII */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-full: 9999px;
+
+  /* SHADOWS (warm-tinted, never pure black) */
+  --shadow-sm: 0 1px 2px rgba(44,42,40,0.05);
+  --shadow-md: 0 4px 12px rgba(44,42,40,0.08);
+  --shadow-lg: 0 8px 24px rgba(44,42,40,0.10);
+  --shadow-xl: 0 16px 48px rgba(44,42,40,0.12);
+
+  /* EASING */
+  --ease-out:    cubic-bezier(0.16,1,0.3,1);
+  --ease-in-out: cubic-bezier(0.65,0,0.35,1);
+
+  /* DURATIONS */
+  --duration-fast:   150ms;
+  --duration-normal: 300ms;
+  --duration-slow:   500ms;
+  --stagger-delay:   120ms;
+}
+
+/* ── RESET & BASE ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  line-height: var(--leading-normal);
+  background: var(--color-bg);
+  background-image: radial-gradient(
+    ellipse at 20% 50%,
+    rgba(217,79,48,0.03) 0%,
+    transparent 50%
+  );
+}
+
+/* ── SCROLLBAR ──────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-full);
+}
+
+/* ── CODE GLOBALS ───────────────────────────────────────────── */
+pre, code {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-x: hidden;
+}
+.translation-code::-webkit-scrollbar,
+pre::-webkit-scrollbar { display: none; }
+
+/* Catppuccin-inspired syntax highlighting */
+.code-keyword  { color: #CBA6F7; }
+.code-string   { color: #A6E3A1; }
+.code-function { color: #89B4FA; }
+.code-comment  { color: #6C7086; }
+.code-number   { color: #FAB387; }
+.code-property { color: #F9E2AF; }
+.code-operator { color: #94E2D5; }
+.code-tag      { color: #F38BA8; }
+.code-attr     { color: #F9E2AF; }
+.code-value    { color: #A6E3A1; }
+.code-line     { display: block; }
+
+/* ── NAV ────────────────────────────────────────────────────── */
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: var(--nav-height);
+  z-index: 1000;
+  background: rgba(250,247,242,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0; left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--color-accent);
+  transition: width 100ms linear;
+}
+
+.nav-inner {
+  max-width: var(--content-width-wide);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+}
+
+.nav-title {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+.nav-dots {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.nav-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--color-text-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  position: relative;
+}
+.nav-dot::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-bg-code);
+  color: #CDD6F4;
+  font-family: var(--font-body);
+  font-size: var(--text-xs);
+  white-space: nowrap;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-fast);
+}
+.nav-dot:hover::after { opacity: 1; }
+.nav-dot.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+.nav-dot.visited {
+  border-color: var(--color-accent-muted);
+  background: var(--color-accent-muted);
+}
+
+/* ── MODULE STRUCTURE ───────────────────────────────────────── */
+.module {
+  min-height: 100dvh;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  padding: var(--space-16) var(--space-6);
+  padding-top: calc(var(--nav-height) + var(--space-12));
+}
+
+.module-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+.module-header { margin-bottom: var(--space-12); }
+
+.module-number {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--text-6xl);
+  font-weight: 800;
+  color: var(--color-accent);
+  opacity: 0.15;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.module-title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: 700;
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+}
+
+.module-subtitle {
+  margin-top: var(--space-3);
+  font-size: var(--text-lg);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-snug);
+}
+
+.screen {
+  margin-bottom: var(--space-16);
+}
+
+.screen-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+  line-height: var(--leading-snug);
+}
+
+p { margin-bottom: var(--space-4); }
+p:last-child { margin-bottom: 0; }
+
+/* ── SCROLL ANIMATIONS ──────────────────────────────────────── */
+.animate-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity var(--duration-slow) var(--ease-out),
+    transform var(--duration-slow) var(--ease-out);
+}
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.stagger-children > .animate-in {
+  transition-delay: calc(var(--stagger-index, 0) * var(--stagger-delay));
+}
+
+/* ── TRANSLATION BLOCKS ─────────────────────────────────────── */
+.translation-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  margin: var(--space-8) 0;
+}
+
+.translation-code {
+  background: var(--color-bg-code);
+  color: #CDD6F4;
+  padding: var(--space-6);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.translation-english {
+  background: var(--color-surface-warm);
+  padding: var(--space-6);
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  border-left: 3px solid var(--color-accent);
+}
+
+.translation-label {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+.translation-english .translation-label {
+  position: static;
+  display: block;
+  margin-bottom: var(--space-3);
+  color: var(--color-text-muted);
+}
+
+.translation-lines .tl {
+  padding: var(--space-1) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  color: var(--color-text-secondary);
+}
+.translation-lines .tl:last-child { border-bottom: none; }
+
+/* ── QUIZ ───────────────────────────────────────────────────── */
+.quiz-container {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  margin: var(--space-8) 0;
+}
+
+.quiz-question-block { margin-bottom: var(--space-8); }
+.quiz-question-block:last-of-type { margin-bottom: 0; }
+
+.quiz-question {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+  line-height: var(--leading-snug);
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  transition: border-color var(--duration-fast), background var(--duration-fast);
+}
+.quiz-option:hover:not(:disabled) { border-color: var(--color-accent-muted); }
+.quiz-option.selected { border-color: var(--color-accent); background: var(--color-accent-light); }
+.quiz-option.correct  { border-color: var(--color-success); background: var(--color-success-light); }
+.quiz-option.incorrect{ border-color: var(--color-error);   background: var(--color-error-light); }
+.quiz-option:disabled { cursor: default; }
+
+.quiz-option-radio {
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  flex-shrink: 0;
+  transition: all var(--duration-fast);
+}
+.quiz-option.selected .quiz-option-radio {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  box-shadow: inset 0 0 0 3px white;
+}
+.quiz-option.correct .quiz-option-radio  { border-color: var(--color-success); background: var(--color-success); box-shadow: inset 0 0 0 3px white; }
+.quiz-option.incorrect .quiz-option-radio{ border-color: var(--color-error);   background: var(--color-error);   box-shadow: inset 0 0 0 3px white; }
+
+.quiz-feedback {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height var(--duration-normal), opacity var(--duration-normal);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+}
+.quiz-feedback.show {
+  max-height: 200px;
+  opacity: 1;
+  padding: var(--space-3);
+  margin-top: var(--space-2);
+}
+.quiz-feedback.success { background: var(--color-success-light); color: var(--color-success); }
+.quiz-feedback.error   { background: var(--color-error-light);   color: var(--color-error); }
+.quiz-feedback.warning { background: var(--color-info-light);    color: var(--color-info); }
+
+.quiz-check-btn, .quiz-reset-btn {
+  margin-top: var(--space-6);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background var(--duration-fast), transform var(--duration-fast);
+}
+.quiz-check-btn {
+  background: var(--color-accent);
+  color: white;
+  margin-right: var(--space-3);
+}
+.quiz-check-btn:hover { background: var(--color-accent-hover); transform: translateY(-1px); }
+.quiz-reset-btn {
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+.quiz-reset-btn:hover { border-color: var(--color-accent-muted); }
+
+/* Scenario block */
+.scenario-block { margin-bottom: var(--space-6); }
+.scenario-context {
+  background: var(--color-info-light);
+  border-left: 3px solid var(--color-info);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.scenario-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-info);
+  margin-bottom: var(--space-2);
+}
+
+/* ── DRAG AND DROP ──────────────────────────────────────────── */
+.dnd-container { margin: var(--space-8) 0; }
+.dnd-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+.dnd-chip {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-accent);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: grab;
+  user-select: none;
+  transition: opacity var(--duration-fast), transform var(--duration-fast);
+}
+.dnd-chip:active { cursor: grabbing; transform: scale(1.05); }
+.dnd-chip.dragging { opacity: 0.4; }
+.dnd-chip.placed { opacity: 0.3; pointer-events: none; }
+
+.dnd-zones { display: flex; flex-direction: column; gap: var(--space-4); }
+.dnd-zone {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  background: var(--color-surface);
+}
+.dnd-zone-label { font-size: var(--text-sm); color: var(--color-text-secondary); margin-bottom: var(--space-3); }
+.dnd-zone-target {
+  min-height: 40px;
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  transition: border-color var(--duration-fast), background var(--duration-fast);
+}
+.dnd-zone-target.drag-over { border-color: var(--color-accent); background: var(--color-accent-light); }
+.dnd-zone-target.correct-placed { border-color: var(--color-success); background: var(--color-success-light); color: var(--color-success); font-weight: 600; }
+.dnd-zone-target.incorrect-placed{ border-color: var(--color-error); background: var(--color-error-light); }
+.touch-ghost {
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-accent);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* ── GROUP CHAT ─────────────────────────────────────────────── */
+.chat-window {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin: var(--space-8) 0;
+}
+
+.chat-messages {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  min-height: 200px;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-3);
+  animation: fadeSlideUp 0.3s var(--ease-out);
+}
+
+.chat-avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+.chat-bubble {
+  max-width: 75%;
+  background: var(--color-bg-warm);
+  border-radius: var(--radius-md) var(--radius-md) var(--radius-md) 4px;
+  padding: var(--space-3) var(--space-4);
+}
+
+.chat-sender {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chat-bubble p {
+  font-size: var(--text-sm);
+  margin: 0;
+  line-height: var(--leading-normal);
+}
+
+.chat-typing {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-6) var(--space-4);
+}
+
+.chat-typing-dots {
+  display: flex;
+  gap: var(--space-1);
+  background: var(--color-bg-warm);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+}
+
+.typing-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--color-text-muted);
+  animation: typingBounce 1.4s infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+.chat-controls {
+  padding: var(--space-4) var(--space-6);
+  border-top: 1px solid var(--color-border-light);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  background: var(--color-surface-warm);
+}
+.chat-progress {
+  margin-left: auto;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+/* ── FLOW / DATA FLOW ANIMATION ─────────────────────────────── */
+.flow-animation {
+  position: relative;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  margin: var(--space-8) 0;
+}
+
+.flow-actors {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.flow-actor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.flow-actor-icon {
+  width: 56px; height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-warm);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  transition: all var(--duration-normal) var(--ease-out);
+}
+
+.flow-actor span {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  text-align: center;
+}
+
+.flow-actor.active .flow-actor-icon {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+  box-shadow: 0 0 0 3px var(--color-accent-light), 0 0 20px rgba(217,79,48,0.15);
+  transform: scale(1.1);
+}
+
+.flow-packet {
+  width: 16px; height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  position: absolute;
+  pointer-events: none;
+  display: none;
+  box-shadow: 0 0 8px rgba(217,79,48,0.5);
+}
+
+.flow-step-label {
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  min-height: 2.5em;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-warm);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-6);
+  line-height: var(--leading-normal);
+}
+
+.flow-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.flow-progress {
+  margin-left: auto;
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+/* ── ARCHITECTURE DIAGRAM ───────────────────────────────────── */
+.arch-diagram {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  margin: var(--space-8) 0;
+}
+.arch-zone {
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+.arch-zone-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-4);
+}
+.arch-component {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background: var(--color-surface-warm);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  margin: var(--space-2);
+  transition: all var(--duration-fast);
+  font-size: var(--text-sm);
+}
+.arch-component:hover, .arch-component.active {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+.arch-icon { font-size: 1.5rem; }
+.arch-description {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-bg-warm);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  min-height: 2.5em;
+}
+
+/* ── LAYER TOGGLE ───────────────────────────────────────────── */
+.layer-demo { margin: var(--space-8) 0; }
+.layer-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+.layer-tab {
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast);
+}
+.layer-tab.active {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+.layer-viewport {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+.layer-description {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ── BUG CHALLENGE ──────────────────────────────────────────── */
+.bug-challenge {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  margin: var(--space-8) 0;
+}
+.bug-challenge h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+.bug-code {
+  background: var(--color-bg-code);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-4);
+}
+.bug-line {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+  cursor: pointer;
+  transition: background var(--duration-fast);
+}
+.bug-line:hover { background: rgba(255,255,255,0.05); }
+.bug-line.correct  { background: rgba(45,139,85,0.2); }
+.bug-line.incorrect{ background: rgba(201,59,59,0.2); }
+.line-num {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: #6C7086;
+  min-width: 1.5em;
+  text-align: right;
+  user-select: none;
+}
+.bug-line code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: #CDD6F4;
+}
+.bug-feedback {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height var(--duration-normal), opacity var(--duration-normal);
+  font-size: var(--text-sm);
+  border-radius: var(--radius-sm);
+}
+.bug-feedback.show {
+  max-height: 200px;
+  opacity: 1;
+  padding: var(--space-3);
+}
+.bug-feedback.success { background: var(--color-success-light); color: var(--color-success); }
+.bug-feedback.error   { background: var(--color-error-light);   color: var(--color-error); }
+
+/* ── CALLOUT BOXES ──────────────────────────────────────────── */
+.callout {
+  display: flex;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  margin: var(--space-6) 0;
+  border-left: 4px solid;
+}
+.callout-accent  { background: var(--color-accent-light);  border-color: var(--color-accent); }
+.callout-info    { background: var(--color-info-light);    border-color: var(--color-info); }
+.callout-warning { background: var(--color-error-light);   border-color: var(--color-error); }
+
+.callout-icon { font-size: 1.25rem; flex-shrink: 0; margin-top: 2px; }
+.callout-title { display: block; font-weight: 700; margin-bottom: var(--space-1); }
+.callout-content p { font-size: var(--text-sm); margin: 0; color: var(--color-text-secondary); }
+
+/* ── PATTERN / FEATURE CARDS ────────────────────────────────── */
+.pattern-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+.pattern-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  border-top: 3px solid var(--color-accent);
+  transition: transform var(--duration-normal) var(--ease-out), box-shadow var(--duration-normal);
+}
+.pattern-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.pattern-icon {
+  width: 40px; height: 40px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-bottom: var(--space-3);
+}
+.pattern-title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+.pattern-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+  margin: 0;
+}
+
+/* ── FLOW DIAGRAMS (static) ─────────────────────────────────── */
+.flow-steps {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin: var(--space-6) 0;
+}
+.flow-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  text-align: center;
+}
+.flow-step-num {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-step p { font-size: var(--text-sm); color: var(--color-text-secondary); max-width: 120px; margin: 0; }
+.flow-arrow {
+  font-size: var(--text-xl);
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+/* ── BADGE / CONFIG LIST ────────────────────────────────────── */
+.badge-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin: var(--space-6) 0;
+}
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  transition: border-color var(--duration-fast);
+}
+.badge-item:hover { border-color: var(--color-accent-muted); }
+.badge-code {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  background: var(--color-bg-code);
+  color: #CBA6F7;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+.badge-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+/* ── GLOSSARY TOOLTIPS ──────────────────────────────────────── */
+.term {
+  border-bottom: 1.5px dashed var(--color-accent-muted);
+  cursor: pointer;
+}
+.term:hover, .term.active {
+  border-bottom-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.term-tooltip {
+  position: fixed;
+  background: var(--color-bg-code);
+  color: #CDD6F4;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-family: var(--font-body);
+  line-height: var(--leading-normal);
+  width: max(200px, min(320px, 80vw));
+  box-shadow: var(--shadow-lg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-fast);
+  z-index: 10000;
+}
+.term-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--color-bg-code);
+}
+.term-tooltip.visible { opacity: 1; }
+.term-tooltip.flip::after {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-bg-code);
+}
+
+/* ── VISUAL FILE TREE ───────────────────────────────────────── */
+.file-tree {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  margin: var(--space-6) 0;
+}
+.ft-folder, .ft-file {
+  padding: var(--space-2) var(--space-3);
+  border-left: 2px solid var(--color-border-light);
+  margin-left: var(--space-4);
+}
+.ft-folder > .ft-name { color: var(--color-accent); font-weight: 600; }
+.ft-folder > .ft-name::before { content: '📁 '; }
+.ft-file > .ft-name::before { content: '📄 '; }
+.ft-desc {
+  color: var(--color-text-secondary);
+  font-family: var(--font-body);
+  margin-left: var(--space-2);
+  font-size: var(--text-xs);
+}
+.ft-children { margin-left: var(--space-4); }
+
+/* ── ICON-LABEL ROWS ────────────────────────────────────────── */
+.icon-rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+.icon-row strong { display: block; font-weight: 600; }
+.icon-row p { margin: var(--space-1) 0 0; color: var(--color-text-secondary); font-size: var(--text-sm); }
+.icon-circle {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* ── NUMBERED STEP CARDS ────────────────────────────────────── */
+.step-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin: var(--space-6) 0;
+}
+.step-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+.step-num {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  flex-shrink: 0;
+}
+.step-body strong { display: block; font-weight: 600; margin-bottom: var(--space-1); }
+.step-body p { margin: 0; color: var(--color-text-secondary); font-size: var(--text-sm); }
+
+/* ── SHARED BUTTON STYLE ────────────────────────────────────── */
+.btn {
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--duration-fast);
+  color: var(--color-text-secondary);
+}
+.btn:hover { border-color: var(--color-accent-muted); color: var(--color-accent); }
+.btn-primary {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+.btn-primary:hover { background: var(--color-accent-hover); border-color: var(--color-accent-hover); color: white; }
+
+/* ── RESPONSIVE ─────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  :root {
+    --text-4xl: 1.875rem;
+    --text-5xl: 2.25rem;
+    --text-6xl: 3rem;
+  }
+  .translation-block { grid-template-columns: 1fr; }
+  .translation-english { border-left: none; border-top: 3px solid var(--color-accent); }
+  .pattern-cards { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-4xl: 1.5rem;
+    --text-5xl: 1.875rem;
+    --text-6xl: 2.25rem;
+  }
+  .module { padding: var(--space-8) var(--space-4); }
+  .pattern-cards { grid-template-columns: 1fr; }
+  .flow-steps { flex-direction: column; }
+  .flow-arrow { transform: rotate(90deg); }
+  .nav-title { max-width: 140px; }
+}
+
+/* ── KEYFRAMES ──────────────────────────────────────────────── */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typingBounce {
+  0%, 60%, 100% { transform: translateY(0); }
+  30%           { transform: translateY(-6px); }
+}
+
+@keyframes packetMove {
+  from { left: var(--packet-from-x); top: var(--packet-from-y); opacity: 0; }
+  20%  { opacity: 1; }
+  80%  { opacity: 1; }
+  to   { left: var(--packet-to-x);   top: var(--packet-to-y);   opacity: 0; }
+}
+
+/* =============================================================
+   PAPER-TO-COURSE — PAPER-SPECIFIC COMPONENTS
+   ============================================================= */
+
+/* ── FORMULA BREAKDOWN ────────────────────────────────────────── */
+.formula-block {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin: var(--space-6) 0;
+}
+.formula-original,
+.formula-explanation { padding: var(--space-5); }
+.formula-original {
+  background: var(--color-bg-code);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.formula-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: var(--space-3);
+}
+.formula-math {
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+  color: #CDD6F4;
+  line-height: var(--leading-relaxed);
+}
+.formula-explanation { background: var(--color-surface); }
+.formula-line {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: var(--space-4);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+.formula-line:last-child { border-bottom: none; }
+.formula-symbol {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: #CBA6F7;
+  font-weight: 600;
+  align-self: start;
+  padding-top: 2px;
+}
+.formula-english {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+/* ── LITERATURE TIMELINE ─────────────────────────────────────── */
+.timeline-container {
+  position: relative;
+  margin: var(--space-8) 0;
+  padding-left: var(--space-8);
+}
+.timeline-line {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-accent), var(--color-accent-muted));
+  border-radius: 2px;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: var(--space-8);
+}
+.timeline-dot {
+  position: absolute;
+  left: calc(-1 * var(--space-8) + 3px);
+  top: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 3px solid var(--color-bg);
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+.timeline-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-5);
+  box-shadow: var(--shadow-sm);
+  border-left: 3px solid var(--color-accent);
+  transition: transform var(--duration-fast), box-shadow var(--duration-fast);
+}
+.timeline-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+.timeline-year {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: var(--space-1);
+}
+.timeline-card h4 {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin: 0 0 var(--space-2);
+}
+.timeline-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-3);
+  line-height: var(--leading-relaxed);
+}
+.timeline-method-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  background: var(--color-accent);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* ── COMPARISON TABLE ────────────────────────────────────────── */
+.comparison-table-container { margin: var(--space-6) 0; overflow-x: auto; }
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+.comparison-table th {
+  background: var(--color-bg-code);
+  color: #CBA6F7;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-align: left;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 2px solid var(--color-accent);
+}
+.comparison-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border-light);
+  vertical-align: middle;
+}
+.method-row { transition: background var(--duration-fast); }
+.method-row:hover { background: var(--color-surface); }
+.highlight-row { background: rgba(217, 79, 48, 0.06); }
+.highlight-row:hover { background: rgba(217, 79, 48, 0.1); }
+.method-name { font-weight: 700; font-family: var(--font-display); }
+.method-name.highlight { color: var(--color-accent); }
+.cell-check { color: #A6E3A1; font-weight: 700; }
+.cell-partial { color: #F9E2AF; font-weight: 600; }
+.cell-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+}
+.cell-bar::before {
+  content: '';
+  display: inline-block;
+  width: var(--pct);
+  max-width: 60px;
+  height: 6px;
+  background: var(--color-accent-muted);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.comparison-tooltip {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  background: var(--color-bg-code);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  color: #CDD6F4;
+  border-left: 3px solid var(--color-accent);
+}
+
+/* ── ABLATION DIAGRAM ───────────────────────────────────────── */
+.ablation-container { margin: var(--space-6) 0; }
+.ablation-container h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+.ablation-intro {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+.ablation-chart { display: flex; flex-direction: column; gap: var(--space-4); }
+.ablation-bar-group { display: flex; align-items: center; gap: var(--space-4); }
+.ablation-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  min-width: 90px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.ablation-bar-track {
+  flex: 1;
+  height: 28px;
+  background: var(--color-bg-code);
+  border-radius: var(--radius-sm);
+  position: relative;
+  overflow: visible;
+}
+.ablation-bar {
+  height: 100%;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-3);
+  transition: width 1s ease-out;
+}
+.ablation-bar.fill-full { background: linear-gradient(90deg, var(--color-accent), #F38BA8); }
+.ablation-bar.fill-remove { background: linear-gradient(90deg, var(--color-accent-muted), #6C7086); }
+.ablation-value {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ablation-drop-marker {
+  position: absolute;
+  top: -4px;
+  transform: translateX(-50%);
+  border-left: 2px dashed var(--color-accent);
+  height: calc(100% + 8px);
+}
+.ablation-drop-label {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ablation-insight {
+  margin-top: var(--space-5);
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  border-left: 3px solid var(--color-accent);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+}
+.insight-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+
+/* ── METHOD CHAT (reuse group-chat from codebase) ────────────── */
+
+/* ── PAPER QUIZ (reuse quiz from codebase) ───────────────────── */
+
+</style>
+
+  <!-- Course-level overrides: accent (teal), chat starts empty, dark mode tokens -->
+  <style>
+    :root {
+      --color-accent:       #2A7B9B;
+      --color-accent-hover: #1F6280;
+      --color-accent-light: #E4F2F7;
+      --color-accent-muted: #5A9DB8;
+    }
+    .chat-window .chat-message,
+    .chat-window .chat-typing { display: none; }
+    .claude-note { border-left-style: dashed; }
+    .level-table td:first-child { font-weight: 700; font-family: var(--font-display); }
+    .src { font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono); }
+    body { background: var(--color-bg); color: var(--color-text); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --color-bg: #191817; --color-bg-warm: #23211F; --color-surface: #1F1E1C; --color-surface-warm: #262422;
+        --color-text: #ECE8E2; --color-text-secondary: #B8B1A8; --color-text-muted: #8C857C;
+        --color-border: #3A3632; --color-border-light: #2E2B28;
+        --color-accent-light: #16313B; --color-success-light: #15301F; --color-error-light: #3A1C1C; --color-info-light: #16313B;
+      }
+    }
+    :root[data-theme="dark"] {
+      --color-bg: #191817; --color-bg-warm: #23211F; --color-surface: #1F1E1C; --color-surface-warm: #262422;
+      --color-text: #ECE8E2; --color-text-secondary: #B8B1A8; --color-text-muted: #8C857C;
+      --color-border: #3A3632; --color-border-light: #2E2B28;
+      --color-accent-light: #16313B; --color-success-light: #15301F; --color-error-light: #3A1C1C; --color-info-light: #16313B;
+    }
+  </style>
+
+  
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+/**
+ * PAPER-TO-COURSE — COMPLETE JS ENGINE
+ * Copy this file verbatim into the course output directory.
+ * Never regenerate it. It handles all interactivity generically.
+ *
+ * Engines included:
+ *  - Navigation & progress bar
+ *  - Scroll-triggered reveal animations
+ *  - Keyboard navigation
+ *  - Glossary tooltips
+ *  - Quiz (multiple-choice & scenario)
+ *  - Drag-and-drop matching
+ *  - Group chat animation
+ *  - Data flow / message flow animation
+ *  - Architecture diagram
+ *  - "Spot the bug" challenge
+ *  - Layer toggle
+ */
+(function () {
+  'use strict';
+
+  /* ── HELPERS ──────────────────────────────────────────────── */
+  function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+  function $$(sel, ctx) { return Array.from((ctx || document).querySelectorAll(sel)); }
+
+  /* ── NAVIGATION & PROGRESS BAR ────────────────────────────── */
+  const progressBar = $('#progress-bar');
+  const navDots     = $$('.nav-dot');
+  const modules     = $$('.module');
+
+  function updateProgress() {
+    if (!progressBar) return;
+    const scrollTop    = window.scrollY;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const pct          = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+    progressBar.style.width = pct + '%';
+    progressBar.setAttribute('aria-valuenow', Math.round(pct));
+    updateNavDots();
+  }
+
+  function updateNavDots() {
+    const scrollMid = window.scrollY + window.innerHeight / 2;
+    modules.forEach((mod, i) => {
+      const dot = navDots[i];
+      if (!dot) return;
+      const top    = mod.offsetTop;
+      const bottom = top + mod.offsetHeight;
+      if (scrollMid >= top && scrollMid < bottom) {
+        dot.classList.add('active');
+        dot.classList.remove('visited');
+      } else if (window.scrollY + window.innerHeight > top) {
+        dot.classList.remove('active');
+        dot.classList.add('visited');
+      } else {
+        dot.classList.remove('active', 'visited');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', () => requestAnimationFrame(updateProgress), { passive: true });
+  updateProgress();
+
+  // Nav dot click → scroll to module
+  navDots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      const target = $('#' + dot.dataset.target);
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  /* ── KEYBOARD NAVIGATION ───────────────────────────────────── */
+  function currentModuleIndex() {
+    const scrollMid = window.scrollY + window.innerHeight / 2;
+    for (let i = 0; i < modules.length; i++) {
+      const top    = modules[i].offsetTop;
+      const bottom = top + modules[i].offsetHeight;
+      if (scrollMid >= top && scrollMid < bottom) return i;
+    }
+    return 0;
+  }
+
+  document.addEventListener('keydown', e => {
+    if (['INPUT', 'TEXTAREA', 'SELECT'].includes(e.target.tagName)) return;
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+      const next = modules[currentModuleIndex() + 1];
+      if (next) { next.scrollIntoView({ behavior: 'smooth' }); e.preventDefault(); }
+    }
+    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+      const prev = modules[currentModuleIndex() - 1];
+      if (prev) { prev.scrollIntoView({ behavior: 'smooth' }); e.preventDefault(); }
+    }
+  });
+
+  /* ── SCROLL-TRIGGERED REVEAL ───────────────────────────────── */
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+  $$('.animate-in').forEach(el => revealObserver.observe(el));
+
+  // Stagger children
+  $$('.stagger-children').forEach(parent => {
+    Array.from(parent.children).forEach((child, i) => {
+      child.style.setProperty('--stagger-index', i);
+    });
+  });
+
+  /* ── GLOSSARY TOOLTIPS ─────────────────────────────────────── */
+  let activeTooltip = null;
+
+  function positionTooltip(term, tip) {
+    const rect     = term.getBoundingClientRect();
+    const tipWidth = Math.min(320, Math.max(200, window.innerWidth * 0.8));
+    let left = rect.left + rect.width / 2 - tipWidth / 2;
+    left = Math.max(8, Math.min(left, window.innerWidth - tipWidth - 8));
+    tip.style.left  = left + 'px';
+    tip.style.width = tipWidth + 'px';
+    document.body.appendChild(tip);
+    const tipHeight = tip.offsetHeight;
+    if (rect.top - tipHeight - 12 < 0) {
+      tip.style.top = (rect.bottom + 8) + 'px';
+      tip.classList.add('flip');
+    } else {
+      tip.style.top = (rect.top - tipHeight - 8) + 'px';
+      tip.classList.remove('flip');
+    }
+  }
+
+  function showTooltip(term, tip) {
+    if (activeTooltip && activeTooltip !== tip) {
+      activeTooltip.classList.remove('visible');
+      activeTooltip.remove();
+    }
+    positionTooltip(term, tip);
+    requestAnimationFrame(() => tip.classList.add('visible'));
+    activeTooltip = tip;
+  }
+
+  function hideTooltip(tip) {
+    tip.classList.remove('visible');
+    setTimeout(() => { if (!tip.classList.contains('visible')) tip.remove(); }, 150);
+    if (activeTooltip === tip) activeTooltip = null;
+  }
+
+  $$('.term').forEach(term => {
+    const tip = document.createElement('span');
+    tip.className = 'term-tooltip';
+    tip.textContent = term.dataset.definition;
+
+    term.addEventListener('mouseenter', () => showTooltip(term, tip));
+    term.addEventListener('mouseleave', () => hideTooltip(tip));
+    term.addEventListener('click', e => {
+      e.stopPropagation();
+      tip.classList.contains('visible') ? hideTooltip(tip) : showTooltip(term, tip);
+    });
+  });
+
+  document.addEventListener('click', () => {
+    if (activeTooltip) { activeTooltip.classList.remove('visible'); activeTooltip.remove(); activeTooltip = null; }
+  });
+
+  /* ── QUIZ ENGINE ───────────────────────────────────────────── */
+  window.selectOption = function (btn) {
+    const block = btn.closest('.quiz-question-block');
+    $$('.quiz-option', block).forEach(o => o.classList.remove('selected'));
+    btn.classList.add('selected');
+  };
+
+  window.checkQuiz = function (containerId) {
+    const container = $('#' + containerId);
+    if (!container) return;
+    $$('.quiz-question-block', container).forEach(q => {
+      const selected  = $('.quiz-option.selected', q);
+      const feedback  = $('.quiz-feedback', q);
+      const correct   = q.dataset.correct;
+      const rightExp  = q.dataset.explanationRight  || '';
+      const wrongExp  = q.dataset.explanationWrong  || '';
+
+      if (!selected) {
+        feedback.textContent = 'Pick an answer first!';
+        feedback.className = 'quiz-feedback show warning';
+        return;
+      }
+      $$('.quiz-option', q).forEach(o => o.disabled = true);
+
+      if (selected.dataset.value === correct) {
+        selected.classList.add('correct');
+        feedback.innerHTML = '<strong>Exactly!</strong> ' + rightExp;
+        feedback.className = 'quiz-feedback show success';
+      } else {
+        selected.classList.add('incorrect');
+        const correctBtn = $(`.quiz-option[data-value="${correct}"]`, q);
+        if (correctBtn) correctBtn.classList.add('correct');
+        feedback.innerHTML = '<strong>Not quite.</strong> ' + wrongExp;
+        feedback.className = 'quiz-feedback show error';
+      }
+    });
+  };
+
+  window.resetQuiz = function (containerId) {
+    const container = $('#' + containerId);
+    if (!container) return;
+    $$('.quiz-option', container).forEach(o => {
+      o.classList.remove('selected', 'correct', 'incorrect');
+      o.disabled = false;
+    });
+    $$('.quiz-feedback', container).forEach(f => { f.className = 'quiz-feedback'; f.textContent = ''; });
+  };
+
+  /* ── DRAG-AND-DROP ENGINE ──────────────────────────────────── */
+  function initDnD(containerEl) {
+    if (!containerEl) return;
+    const chips = $$('.dnd-chip', containerEl);
+    const zones = $$('.dnd-zone', containerEl);
+
+    // Mouse (HTML5 Drag API)
+    chips.forEach(chip => {
+      chip.addEventListener('dragstart', e => {
+        e.dataTransfer.setData('text/plain', chip.dataset.answer);
+        chip.classList.add('dragging');
+      });
+      chip.addEventListener('dragend', () => chip.classList.remove('dragging'));
+    });
+
+    zones.forEach(zone => {
+      const target = $('.dnd-zone-target', zone);
+      if (!target) return;
+      target.addEventListener('dragover',  e => { e.preventDefault(); target.classList.add('drag-over'); });
+      target.addEventListener('dragleave', ()  => target.classList.remove('drag-over'));
+      target.addEventListener('drop', e => {
+        e.preventDefault();
+        target.classList.remove('drag-over');
+        const answer = e.dataTransfer.getData('text/plain');
+        const chip   = $(`.dnd-chip[data-answer="${answer}"]`, containerEl);
+        if (!chip) return;
+        target.textContent    = chip.textContent;
+        target.dataset.placed = answer;
+        chip.classList.add('placed');
+      });
+    });
+
+    // Touch
+    chips.forEach(chip => {
+      chip.addEventListener('touchstart', e => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        const ghost = chip.cloneNode(true);
+        ghost.classList.add('touch-ghost');
+        ghost.style.cssText = `position:fixed;z-index:9999;pointer-events:none;left:${touch.clientX - 40}px;top:${touch.clientY - 20}px;`;
+        document.body.appendChild(ghost);
+        chip._ghost  = ghost;
+        chip._answer = chip.dataset.answer;
+      }, { passive: false });
+
+      chip.addEventListener('touchmove', e => {
+        e.preventDefault();
+        const touch = e.touches[0];
+        if (chip._ghost) {
+          chip._ghost.style.left = (touch.clientX - 40) + 'px';
+          chip._ghost.style.top  = (touch.clientY - 20) + 'px';
+        }
+        zones.forEach(z => { const t = $('.dnd-zone-target', z); if (t) t.classList.remove('drag-over'); });
+        const el = document.elementFromPoint(touch.clientX, touch.clientY);
+        const zt = el && el.closest('.dnd-zone-target');
+        if (zt) zt.classList.add('drag-over');
+      }, { passive: false });
+
+      chip.addEventListener('touchend', e => {
+        if (chip._ghost) { chip._ghost.remove(); chip._ghost = null; }
+        const touch = e.changedTouches[0];
+        const el    = document.elementFromPoint(touch.clientX, touch.clientY);
+        const zt    = el && el.closest('.dnd-zone-target');
+        if (zt) {
+          zt.textContent    = chip.textContent;
+          zt.dataset.placed = chip._answer;
+          chip.classList.add('placed');
+        }
+        zones.forEach(z => { const t = $('.dnd-zone-target', z); if (t) t.classList.remove('drag-over'); });
+      });
+    });
+  }
+
+  window.checkDnD = function (containerId) {
+    const container = $('#' + containerId);
+    if (!container) return;
+    $$('.dnd-zone', container).forEach(zone => {
+      const target  = $('.dnd-zone-target', zone);
+      if (!target || !target.dataset.placed) return;
+      if (target.dataset.placed === zone.dataset.correct) {
+        target.classList.add('correct-placed');
+      } else {
+        target.classList.add('incorrect-placed');
+      }
+    });
+  };
+
+  window.resetDnD = function (containerId) {
+    const container = $('#' + containerId);
+    if (!container) return;
+    $$('.dnd-zone-target', container).forEach(t => {
+      t.textContent = 'Drop here';
+      delete t.dataset.placed;
+      t.classList.remove('correct-placed', 'incorrect-placed');
+    });
+    $$('.dnd-chip', container).forEach(c => c.classList.remove('placed', 'dragging'));
+  };
+
+  // Auto-init all dnd containers
+  $$('.dnd-container').forEach(el => initDnD(el));
+
+  /* ── GROUP CHAT ENGINE ─────────────────────────────────────── */
+  function initChat(containerEl) {
+    if (!containerEl) return;
+    const messages    = $$('.chat-message', containerEl);
+    const typingEl    = $('.chat-typing', containerEl);
+    const typingAvEl  = $('#' + containerEl.id + '-typing-avatar') || $('.chat-avatar', typingEl);
+    const progressEl  = $('.chat-progress', containerEl);
+    let index = 0;
+
+    // Build actor map from messages
+    const actors = {};
+    messages.forEach(msg => {
+      const sender = msg.dataset.sender;
+      const avatar = $('.chat-avatar', msg);
+      if (avatar && !actors[sender]) {
+        actors[sender] = { initial: avatar.textContent.trim(), style: avatar.style.background };
+      }
+    });
+
+    function updateProgress() {
+      if (progressEl) progressEl.textContent = index + ' / ' + messages.length + ' messages';
+    }
+
+    function showNext() {
+      if (index >= messages.length) return;
+      const msg    = messages[index];
+      const sender = msg.dataset.sender;
+
+      if (typingEl && actors[sender]) {
+        if (typingAvEl) {
+          typingAvEl.textContent       = actors[sender].initial;
+          typingAvEl.style.background  = actors[sender].style;
+        }
+        typingEl.style.display = 'flex';
+      }
+
+      setTimeout(() => {
+        if (typingEl) typingEl.style.display = 'none';
+        msg.style.display = 'flex';
+        msg.style.animation = 'fadeSlideUp 0.3s var(--ease-out)';
+        index++;
+        updateProgress();
+      }, 800);
+    }
+
+    function showAll() {
+      const iv = setInterval(() => {
+        if (index >= messages.length) { clearInterval(iv); return; }
+        showNext();
+      }, 1200);
+    }
+
+    function reset() {
+      index = 0;
+      messages.forEach(m => { m.style.display = 'none'; m.style.animation = ''; });
+      if (typingEl) typingEl.style.display = 'none';
+      updateProgress();
+    }
+
+    // Bind controls
+    const nextBtn  = $('.chat-next-btn',  containerEl);
+    const allBtn   = $('.chat-all-btn',   containerEl);
+    const resetBtn = $('.chat-reset-btn', containerEl);
+    if (nextBtn)  nextBtn.addEventListener('click',  showNext);
+    if (allBtn)   allBtn.addEventListener('click',   showAll);
+    if (resetBtn) resetBtn.addEventListener('click', reset);
+
+    updateProgress();
+  }
+
+  $$('.chat-window').forEach(el => initChat(el));
+
+  /* ── FLOW ANIMATION ENGINE ─────────────────────────────────── */
+  function initFlow(containerEl) {
+    if (!containerEl) return;
+    const stepsData  = JSON.parse(containerEl.dataset.steps || '[]');
+    const labelEl    = $('.flow-step-label', containerEl);
+    const progressEl = $('.flow-progress',   containerEl);
+    const packet     = $('.flow-packet',     containerEl);
+    let step = 0;
+
+    function updateProgress() {
+      if (progressEl) progressEl.textContent = 'Step ' + step + ' / ' + stepsData.length;
+    }
+
+    function animatePacket(fromId, toId) {
+      if (!packet) return;
+      const fromEl = $('#' + fromId);
+      const toEl   = $('#' + toId);
+      if (!fromEl || !toEl) return;
+      const fromR = fromEl.getBoundingClientRect();
+      const toR   = toEl.getBoundingClientRect();
+      const contR = containerEl.getBoundingClientRect();
+      const fx = fromR.left + fromR.width / 2  - contR.left;
+      const fy = fromR.top  + fromR.height / 2 - contR.top;
+      const tx = toR.left   + toR.width / 2    - contR.left;
+      const ty = toR.top    + toR.height / 2   - contR.top;
+      packet.style.setProperty('--packet-from-x', fx + 'px');
+      packet.style.setProperty('--packet-from-y', fy + 'px');
+      packet.style.setProperty('--packet-to-x',   tx + 'px');
+      packet.style.setProperty('--packet-to-y',   ty + 'px');
+      packet.style.display    = 'block';
+      packet.style.animation  = 'none';
+      packet.offsetHeight; // reflow
+      packet.style.animation  = 'packetMove 0.8s var(--ease-in-out) forwards';
+      setTimeout(() => { packet.style.display = 'none'; }, 850);
+    }
+
+    function next() {
+      if (step >= stepsData.length) return;
+      const s = stepsData[step];
+      $$('.flow-actor', containerEl).forEach(a => a.classList.remove('active'));
+      if (s.highlight) {
+        const hEl = $('#' + s.highlight, containerEl) || $('#flow-' + s.highlight);
+        if (hEl) hEl.classList.add('active');
+      }
+      if (s.packet && s.from && s.to) animatePacket('flow-' + s.from, 'flow-' + s.to);
+      if (labelEl) labelEl.textContent = s.label || '';
+      step++;
+      updateProgress();
+    }
+
+    function reset() {
+      step = 0;
+      $$('.flow-actor', containerEl).forEach(a => a.classList.remove('active'));
+      if (labelEl) labelEl.textContent = 'Click "Next Step" to begin';
+      if (packet)  packet.style.display = 'none';
+      updateProgress();
+    }
+
+    const nextBtn  = $('.flow-next-btn',  containerEl);
+    const resetBtn = $('.flow-reset-btn', containerEl);
+    if (nextBtn)  nextBtn.addEventListener('click',  next);
+    if (resetBtn) resetBtn.addEventListener('click', reset);
+
+    updateProgress();
+  }
+
+  $$('.flow-animation').forEach(el => initFlow(el));
+
+  /* ── ARCHITECTURE DIAGRAM ──────────────────────────────────── */
+  $$('.arch-component').forEach(comp => {
+    comp.addEventListener('click', function () {
+      const diagram = this.closest('.arch-diagram');
+      $$('.arch-component', diagram).forEach(c => c.classList.remove('active'));
+      this.classList.add('active');
+      const descEl = $('.arch-description', diagram);
+      if (descEl) descEl.textContent = this.dataset.desc || '';
+    });
+  });
+
+  /* ── BUG CHALLENGE ─────────────────────────────────────────── */
+  window.checkBugLine = function (el, isCorrect) {
+    const challenge = el.closest('.bug-challenge');
+    const feedback  = $('.bug-feedback', challenge);
+    if (isCorrect) {
+      el.classList.add('correct');
+      feedback.innerHTML  = '<strong>Found it!</strong> ' + (el.dataset.explanation || '');
+      feedback.className  = 'bug-feedback show success';
+      $$('.bug-line', challenge).forEach(l => l.style.pointerEvents = 'none');
+    } else {
+      el.classList.add('incorrect');
+      feedback.innerHTML  = (el.dataset.hint || 'Not this line — keep looking...');
+      feedback.className  = 'bug-feedback show error';
+      setTimeout(() => {
+        el.classList.remove('incorrect');
+        feedback.className = 'bug-feedback';
+      }, 1800);
+    }
+  };
+
+  /* ── LAYER TOGGLE ──────────────────────────────────────────── */
+  window.showLayer = function (layerId, btn) {
+    const demo = btn ? btn.closest('.layer-demo') : null;
+    if (!demo) return;
+    $$('.layer', demo).forEach(l => l.style.display = 'none');
+    $$('.layer-tab', demo).forEach(t => t.classList.remove('active'));
+    const layer = $('#' + layerId);
+    if (layer) layer.style.display = 'block';
+    btn.classList.add('active');
+  };
+
+})();
+
+});
+</script>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="progress-bar" id="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    <div class="nav-inner">
+      <span class="nav-title">Japan LTCI Certification</span>
+      <div class="nav-dots" id="nav-dots" role="tablist">
+        <button class="nav-dot" data-target="module-1" data-tooltip="Problem &amp; motivation" role="tab" aria-label="Module 1: Problem and motivation"></button>
+        <button class="nav-dot" data-target="module-2" data-tooltip="How it was built" role="tab" aria-label="Module 2: How it was built"></button>
+        <button class="nav-dot" data-target="module-3" data-tooltip="Approaches compared" role="tab" aria-label="Module 3: Approaches compared"></button>
+        <button class="nav-dot" data-target="module-4" data-tooltip="The certification machine" role="tab" aria-label="Module 4: The certification machine"></button>
+        <button class="nav-dot" data-target="module-5" data-tooltip="Evidence &amp; results" role="tab" aria-label="Module 5: Evidence and results"></button>
+        <button class="nav-dot" data-target="module-6" data-tooltip="Limits &amp; lessons" role="tab" aria-label="Module 6: Limits and lessons"></button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- MODULE_CONTENT -->
+
+<section class="module" id="module-1">
+  <div class="module-content">
+    <header class="module-header">
+      <span class="module-number">01</span>
+      <h1 class="module-title">From care by family to care by society</h1>
+      <p class="module-subtitle">Tsutsui &amp; Muramatsu, <em>J Am Geriatr Soc</em> 2005;53:522–527. Why Japan needed a national, objective way to decide who gets long-term care.</p>
+    </header>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">The paper in one paragraph</h2>
+      <p>In April 2000 Japan launched a mandatory <span class="term" data-definition="Long-Term Care Insurance: a compulsory social insurance scheme. Everyone pays premiums from age 40; everyone aged 65+ can claim services if certified.">LTCI</span> scheme. Every person aged 65 and older became entitled to long-term care <strong>based strictly on physical and mental status</strong>, not income or family. To sort millions of applicants fairly, Japan built a computer-aided assessment: an 85-item questionnaire feeds a statistical model that estimates daily care minutes and assigns one of <strong>seven need levels</strong>. A local expert board then reviews each result. The paper describes how the system was built, how it works, and what went wrong in the first three years.</p>
+      <div class="callout callout-info">
+        <span class="callout-icon">📄</span>
+        <div class="callout-content">
+          <span class="callout-title">Paper type</span>
+          <p>A descriptive health-policy report ("International Health Affairs" section), not an empirical study. The first author led the 1995 time study the model is built on, so this is an insider's account.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">What was broken before 2000</h2>
+      <div class="pattern-cards">
+        <div class="pattern-card">
+          <div class="pattern-icon">🏥</div>
+          <div class="pattern-title">Hospitals as care homes</div>
+          <p class="pattern-desc">Nursing homes and home care were scarce. Seniors with LTC needs often stayed in hospital for years, which partly explained Japan's long average hospital stays.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">🧾</div>
+          <div class="pattern-title">Means-tested welfare</div>
+          <p class="pattern-desc">LTC sat in the tax-funded welfare system, aimed at low-income seniors with little family support. It carried stigma and gave providers little reason to compete.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">⚖️</div>
+          <div class="pattern-title">Subjective eligibility</div>
+          <p class="pattern-desc">Local officials judged income and family availability case by case. Criteria differed from case to case and area to area, and the process was seen as "subjective, arbitrary, and unfair."</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">🏛️</div>
+          <div class="pattern-title">Political pressure</div>
+          <p class="pattern-desc">Political pressure often got functionally independent seniors admitted to nursing facilities.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">The scale problem</h2>
+      <p>At launch, about <strong>2.8 million</strong> older people were expected to apply to roughly <strong>3,000 municipalities</strong> (the insurers). There were not enough doctors, nurses and social workers to assess everyone by professional judgment. So the core design question became:</p>
+      <div class="callout callout-accent">
+        <span class="callout-icon">❓</span>
+        <div class="callout-content">
+          <span class="callout-title">Core question</span>
+          <p>How do you decide LTC eligibility for millions of people in a way that is <strong>objective, fair, efficient, and acceptable to every citizen</strong>, without relying on scarce professionals for every case?</p>
+        </div>
+      </div>
+      <p>The abstract says "more than two million"; the body says 2.8 million. Both refer to expected applicants at launch.</p>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">How LTCI is financed (Figure 1)</h2>
+      <p>Users pay a <strong>10% copayment</strong>. The rest of the budget is split half premiums, half taxes. Benefits are services only, never cash.</p>
+      <div class="comparison-table-container">
+        <table class="comparison-table">
+          <thead><tr><th>Source</th><th>Share of budget</th><th>Who</th></tr></thead>
+          <tbody>
+            <tr class="method-row"><td><span class="method-name">Category 1 premium</span></td><td><span class="cell-bar" style="--pct: 18%">18%</span></td><td>People aged 65+ (24 million in 2003); rate set by each municipality</td></tr>
+            <tr class="method-row"><td><span class="method-name">Category 2 premium</span></td><td><span class="cell-bar" style="--pct: 32%">32%</span></td><td>People aged 40–64 (42 million in 2003); pooled nationally, redistributed</td></tr>
+            <tr class="method-row"><td><span class="method-name">National government</span></td><td><span class="cell-bar" style="--pct: 25%">25%</span></td><td>Tax</td></tr>
+            <tr class="method-row"><td><span class="method-name">Prefecture</span></td><td><span class="cell-bar" style="--pct: 12.5%">12.5%</span></td><td>Tax</td></tr>
+            <tr class="method-row"><td><span class="method-name">Municipality</span></td><td><span class="cell-bar" style="--pct: 12.5%">12.5%</span></td><td>Tax</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout callout-warning">
+        <span class="callout-icon">🔎</span>
+        <div class="callout-content">
+          <span class="callout-title">Arithmetic check (Claude)</span>
+          <p>Figure 1 gives the 2004 budget as 5,451.5 billion yen, "$509 billion if $1 = 107 yen". 5,451.5 ÷ 107 ≈ <strong>$51 billion</strong>, so the dollar figure in the paper looks like a typo. Quote the yen figure.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">A system borrowed from three places</h2>
+      <div class="icon-rows">
+        <div class="icon-row"><div class="icon-circle">🇩🇪</div><div><strong>Germany (LTCI since 1994)</strong><p>The overall social-insurance model.</p></div></div>
+        <div class="icon-row"><div class="icon-circle">🇸🇪</div><div><strong>Scandinavia</strong><p>Community-based management: municipalities are the insurers. They run the finances, set 65+ premiums, and plan and oversee services.</p></div></div>
+        <div class="icon-row"><div class="icon-circle">🇬🇧</div><div><strong>United Kingdom</strong><p>Care management. A new profession of "care managers" (licensed professionals with 5+ years' experience plus a few days' training) draws up individual care plans.</p></div></div>
+      </div>
+      <p>For-profit and not-for-profit providers compete in a quasi-market, and seniors choose their providers.</p>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="module-2">
+  <div class="module-content">
+    <header class="module-header">
+      <span class="module-number">02</span>
+      <h1 class="module-title">How the instrument was built</h1>
+      <p class="module-subtitle">From the Gold Plans to a statistical model trained on 10 million minutes of observed care.</p>
+    </header>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Timeline</h2>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item" data-year="1989">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1989 · 1994</span>
+            <h4>Gold Plan, then New Gold Plan</h4>
+            <p class="timeline-desc">Tax-funded expansion of LTC services. Municipalities get a new role: planning services for older people.</p>
+            <div class="timeline-method-tag">Tax-based welfare</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="1995">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1995</span>
+            <h4>The national time study</h4>
+            <p class="timeline-desc">51 recommended "high-quality" LTC institutions. Surveyors shadowed 2,376 caregivers minute by minute for 48 hours: about 10 million minutes of care to 3,800 seniors, coded into 328 care activities.</p>
+            <div class="timeline-method-tag">Data collection</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="1996">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">Until 1996</span>
+            <h4>RUG-III considered, then dropped</h4>
+            <p class="timeline-desc">The US nursing-home case-mix system did not explain Japanese resource use, and it needed specially trained nurses Japan did not have.</p>
+            <div class="timeline-method-tag">Rejected option</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="1996-98">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">1996 – 1998</span>
+            <h4>National model programmes</h4>
+            <p class="timeline-desc">Tree-regression models pilot-tested on 175,129 seniors in all municipalities. Agreement with professionals' judgment: 71.5% (1996), 75.3% (1997). Item interrater reliability 0.9 (1997).</p>
+            <div class="timeline-method-tag">Validation</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="2000">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">April 2000</span>
+            <h4>LTCI launches</h4>
+            <p class="timeline-desc">Certified beneficiaries rise from 2 million (2000) to 3.5 million (December 2003).</p>
+            <div class="timeline-method-tag">Implementation</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="2003">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2003</span>
+            <h4>First revision</h4>
+            <p class="timeline-desc">Fee schedules cut (especially institutional), raised for care management, home help and rehabilitation. A dementia indicator is added to the computer model.</p>
+            <div class="timeline-method-tag">Revision</div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="2006">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">2006 (planned)</span>
+            <h4>Next revision</h4>
+            <p class="timeline-desc">Government considering lowering the premium-paying age from 40 to 20. By law, the assessment model is revised every 5 years.</p>
+            <div class="timeline-method-tag">Outlook</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Three design principles</h2>
+      <div class="step-cards">
+        <div class="step-card"><div class="step-num">1</div><div class="step-body"><strong>Reproducible</strong><p>Any trained investigator using the instrument should get sufficiently similar results for the same applicant.</p></div></div>
+        <div class="step-card"><div class="step-num">2</div><div class="step-body"><strong>Questionnaire-only</strong><p>Results are based strictly on the responses to the assessment questionnaire.</p></div></div>
+        <div class="step-card"><div class="step-num">3</div><div class="step-body"><strong>One standard unit</strong><p>Need is expressed in a standardized unit: estimated minutes of care per day.</p></div></div>
+      </div>
+      <div class="callout callout-accent">
+        <span class="callout-icon">🔑</span>
+        <div class="callout-content">
+          <span class="callout-title">The big shift</span>
+          <p>Income, assets and family care availability are <strong>no longer relevant</strong> to eligibility. LTC became a uniform entitlement based only on physical and mental status.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Inside the time study</h2>
+      <p>The government's goal was to make the care of "ideal" facilities available at home, so the study deliberately sampled facilities recommended by national associations as high quality. Each surveyor was a trained professional from the same institution, which reduced unrecorded care.</p>
+      <div class="badge-list">
+        <div class="badge-item"><span class="badge-code">51</span><span class="badge-desc">institutions</span></div>
+        <div class="badge-item"><span class="badge-code">2,376</span><span class="badge-desc">professional caregivers observed</span></div>
+        <div class="badge-item"><span class="badge-code">3,800</span><span class="badge-desc">seniors receiving care</span></div>
+        <div class="badge-item"><span class="badge-code">~10 M</span><span class="badge-desc">minutes of care recorded</span></div>
+        <div class="badge-item"><span class="badge-code">328</span><span class="badge-desc">predefined care activities</span></div>
+        <div class="badge-item"><span class="badge-code">2 × 24 h</span><span class="badge-desc">shadowing per caregiver</span></div>
+      </div>
+      <div class="callout callout-warning">
+        <span class="callout-icon">⚠️</span>
+        <div class="callout-content">
+          <span class="callout-title">What was left out, on purpose</span>
+          <p>Time-study data on <strong>home care</strong> (by professionals and families) were also collected but <strong>not used</strong>, because home care use depended mostly on family and housing factors. The model therefore estimates <em>institutional</em> care minutes from body and mind alone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="module-3">
+  <div class="module-content">
+    <header class="module-header">
+      <span class="module-number">03</span>
+      <h1 class="module-title">Ways to decide who gets care</h1>
+      <p class="module-subtitle">Japan's choice against the options the paper names: old Japanese practice, US case-mix, professional judgment, and Canadian single-entry systems.</p>
+    </header>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Two ways to measure need</h2>
+      <p>The paper frames the choice simply. Public LTC has to either <strong>estimate care needs directly</strong> (a professional judges what the person needs) or <strong>assess physical and mental status and estimate care needs from it</strong>. Japan took the second route: it scores body and mind, then converts the score into minutes of care with a statistical model.</p>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Comparison table</h2>
+      <p>Hover or tap the underlined terms for details. Cells only contain what the paper says; "not stated" means the paper is silent.</p>
+      <div class="comparison-table-container">
+        <table class="comparison-table">
+          <thead>
+            <tr><th>Approach</th><th>Basis of decision</th><th>Who assesses</th><th>Scope</th><th>Income / family counted?</th></tr>
+          </thead>
+          <tbody>
+            <tr class="method-row">
+              <td><span class="method-name">Japan before 2000</span></td>
+              <td>Professional judgment; NH committees in many areas</td>
+              <td>Local government employees, some licensed</td>
+              <td>Municipal, varied by area</td>
+              <td><span class="cell-check">✓</span> Yes, both</td>
+            </tr>
+            <tr class="method-row">
+              <td><span class="method-name"><span class="term" data-definition="Resource Utilization Groups v.III: a US case-mix classification for nursing-home residents, based on resource use (cost). Uses the Minimum Data Set (MDS). Rehabilitation by physical therapists strongly drives the groups.">RUG-III (USA)</span></span></td>
+              <td>Case-mix groups from resource use, via the MDS</td>
+              <td>Nurses with special MDS training</td>
+              <td>Nursing-home residents</td>
+              <td>Not stated</td>
+            </tr>
+            <tr class="method-row">
+              <td><span class="method-name">Germany, Israel</span></td>
+              <td>Tend to rely on professional judgment</td>
+              <td>Professionals</td>
+              <td>National social LTCI</td>
+              <td>Not stated</td>
+            </tr>
+            <tr class="method-row">
+              <td><span class="method-name"><span class="term" data-definition="Quebec's 'Classification by Type in a Long-term Care Environment' method uses nursing care time to set eligibility for institutional LTC.">Quebec (Canada)</span></span></td>
+              <td>Nursing care time</td>
+              <td>Not stated</td>
+              <td>Provincial; institutional LTC</td>
+              <td>Not stated</td>
+            </tr>
+            <tr class="method-row">
+              <td><span class="method-name"><span class="term" data-definition="A 'single-entry system': assessors use standardized instruments to set care-needs levels for all applicants for LTC services.">British Columbia (Canada)</span></span></td>
+              <td>Standardized instrument, single entry</td>
+              <td>Assessors</td>
+              <td>Provincial; all LTC applicants</td>
+              <td>Not stated</td>
+            </tr>
+            <tr class="method-row highlight-row">
+              <td><span class="method-name highlight">Japan LTCI (2000)</span></td>
+              <td>85-item questionnaire → tree-regression care minutes → 7 levels, then board review</td>
+              <td>Trained local officials (3–7 days' training), no medical expertise required</td>
+              <td><span class="cell-check">✓</span> National, all settings</td>
+              <td><span class="cell-partial">✗ No</span> (board may weigh context)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The authors' claimed advantage for Japan: national standardization (equity) plus continuous improvement from large national datasets.</p>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Why Japan said no to RUG-III</h2>
+      <div class="pattern-cards">
+        <div class="pattern-card">
+          <div class="pattern-icon">📉</div>
+          <div class="pattern-title">Poor fit</div>
+          <p class="pattern-desc">It did not explain Japanese resource-use patterns. In the US, therapist-led rehab is among the costliest NH services and drives RUG groups. Japanese NHs rarely had physical therapists: no pilot resident had a 30-minute individual rehab session.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">👩‍⚕️</div>
+          <div class="pattern-title">Workforce</div>
+          <p class="pattern-desc">RUG-III needs nurses specially trained in the MDS. Japan could not train enough of them before launch.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">💡</div>
+          <div class="pattern-title">What it left behind</div>
+          <p class="pattern-desc">The ideas of patient/resident classification and prospective payment, which shaped Japanese LTC.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">The design debate, dramatised</h2>
+      <p>A short dramatisation. Every point comes from the paper; the speakers are invented.</p>
+      <div class="chat-window" id="chat-design">
+        <div class="chat-messages">
+          <div class="chat-message" data-sender="planner">
+            <div class="chat-avatar" style="background: var(--color-actor-2)">MH</div>
+            <div class="chat-bubble"><span class="chat-sender">MHLW planner</span><p>We expect 2.8 million applications to 3,000 municipalities. Whatever we pick has to be objective, fair and fast.</p></div>
+          </div>
+          <div class="chat-message" data-sender="rug">
+            <div class="chat-avatar" style="background: var(--color-actor-3)">RU</div>
+            <div class="chat-bubble"><span class="chat-sender">RUG-III advocate</span><p>Use our case-mix groups. They're proven in US nursing homes.</p></div>
+          </div>
+          <div class="chat-message" data-sender="planner">
+            <div class="chat-avatar" style="background: var(--color-actor-2)">MH</div>
+            <div class="chat-bubble"><span class="chat-sender">MHLW planner</span><p>Your groups lean on therapist rehab, which our homes barely provide. And we can't train enough MDS nurses in time.</p></div>
+          </div>
+          <div class="chat-message" data-sender="prof">
+            <div class="chat-avatar" style="background: var(--color-actor-4)">PJ</div>
+            <div class="chat-bubble"><span class="chat-sender">Professional-judgment model</span><p>Germany and Israel let professionals decide. Why not you?</p></div>
+          </div>
+          <div class="chat-message" data-sender="planner">
+            <div class="chat-avatar" style="background: var(--color-actor-2)">MH</div>
+            <div class="chat-bubble"><span class="chat-sender">MHLW planner</span><p>That's what we had locally, and people called it arbitrary. Criteria varied by area, and politics got independent seniors into homes.</p></div>
+          </div>
+          <div class="chat-message" data-sender="japan">
+            <div class="chat-avatar" style="background: var(--color-actor-1)">JP</div>
+            <div class="chat-bubble"><span class="chat-sender">Time-study team</span><p>Then let the data decide. We observed 10 million minutes of care. A model can turn a questionnaire any trained official can fill in into minutes of care.</p></div>
+          </div>
+          <div class="chat-message" data-sender="planner">
+            <div class="chat-avatar" style="background: var(--color-actor-2)">MH</div>
+            <div class="chat-bubble"><span class="chat-sender">MHLW planner</span><p>Agreed. But keep a professional board to review every result.</p></div>
+          </div>
+        </div>
+        <div class="chat-typing">
+          <div class="chat-avatar" id="chat-design-typing-avatar">…</div>
+          <div class="chat-typing-dots"><span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span></div>
+        </div>
+        <div class="chat-controls">
+          <button class="btn btn-primary chat-next-btn">Next message</button>
+          <button class="btn chat-all-btn">Play all</button>
+          <button class="btn chat-reset-btn">Reset</button>
+          <span class="chat-progress"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="module-4">
+  <div class="module-content">
+    <header class="module-header">
+      <span class="module-number">04</span>
+      <h1 class="module-title">The certification machine</h1>
+      <p class="module-subtitle">How an application becomes one of seven need levels: questionnaire, computer, board, care plan.</p>
+    </header>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">The pipeline</h2>
+      <p>Click each box to see what it does.</p>
+      <div class="arch-diagram">
+        <div class="arch-zone">
+          <div class="arch-zone-label">Stage 1 · Initial assessment (home visit)</div>
+          <div class="arch-component" data-desc="The older person or their carer (family or professional) contacts the municipal government to ask for certification."><span class="arch-icon">📞</span>Application</div>
+          <div class="arch-component" data-desc="A trained local government official visits the home and completes the 85-item questionnaire: 73 items on physical and mental status plus 12 on medical procedures used in the last 14 days. The assessor also writes free-text notes."><span class="arch-icon">📋</span>85-item questionnaire</div>
+        </div>
+        <div class="arch-zone">
+          <div class="arch-zone-label">Stage 2 · Computer</div>
+          <div class="arch-component" data-desc="Responses are converted into standardized scores on 7 dimensions of physical and mental status (see Table 1 below)."><span class="arch-icon">📊</span>7 dimension scores</div>
+          <div class="arch-component" data-desc="Tree-regression models, built from the 1995 time study, estimate minutes of care for each of nine care categories."><span class="arch-icon">🌳</span>Tree regression</div>
+          <div class="arch-component" data-desc="The category minutes are summed. The total maps onto a level using the thresholds in Table 2: not eligible, need support, or Level 1 to 5."><span class="arch-icon">⏱️</span>Total minutes → level</div>
+        </div>
+        <div class="arch-zone">
+          <div class="arch-zone-label">Stage 3 · Human review</div>
+          <div class="arch-component" data-desc="The applicant's primary care physician writes a statement that goes to the board."><span class="arch-icon">🩺</span>Physician statement</div>
+          <div class="arch-component" data-desc="Physicians, nurses and other health and social-service experts appointed by the mayor. They check the computer result against the physician statement and assessor notes, and may reassign the level, most often upward. Their decision is final. They agreed with the initial assessment about 70% of the time in the first 3 years."><span class="arch-icon">👥</span>Certification Board</div>
+        </div>
+        <div class="arch-zone">
+          <div class="arch-zone-label">Stage 4 · Services</div>
+          <div class="arch-component" data-desc="The certified level sets the monthly benefit ceiling (Table 2)."><span class="arch-icon">🏷️</span>Final level</div>
+          <div class="arch-component" data-desc="A care manager helps the senior and family draw up a care plan within the ceiling. The senior chooses providers and pays a 10% copayment."><span class="arch-icon">🗂️</span>Care manager &amp; plan</div>
+        </div>
+        <div class="arch-description">Click a component above.</div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">What the questionnaire asks (Table 1)</h2>
+      <div class="comparison-table-container">
+        <table class="comparison-table">
+          <thead><tr><th>Dimension</th><th>Items</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr class="method-row"><td><span class="method-name">1. Paralysis &amp; joint limitation</span></td><td>11</td><td>Paralysis or limited joint movement by body part</td></tr>
+            <tr class="method-row"><td><span class="method-name">2. Movement &amp; balance</span></td><td>7</td><td>Turn over in bed, sit up, stand, walk, transfer</td></tr>
+            <tr class="method-row"><td><span class="method-name">3. Complex movement</span></td><td>4</td><td>Stand up from sitting, one-foot stand, bath tub, bathe</td></tr>
+            <tr class="method-row"><td><span class="method-name">4. Special assistance</span></td><td>9</td><td>Bedsores, swallowing, sensing bladder/bowel, toileting, eating</td></tr>
+            <tr class="method-row"><td><span class="method-name">5. ADL / IADL assistance</span></td><td>13</td><td>Hygiene, dressing, cleaning, medication, money; memory, indifference</td></tr>
+            <tr class="method-row"><td><span class="method-name">6. Communication &amp; cognition</span></td><td>10</td><td>Vision, hearing, following instructions, orientation, short-term memory</td></tr>
+            <tr class="method-row"><td><span class="method-name">7. Behavioural problems</span></td><td>19</td><td>Hallucinations, wandering, violence, day–night reversal, unsafe with fire</td></tr>
+            <tr class="method-row highlight-row"><td><span class="method-name highlight">Subtotal: physical &amp; mental</span></td><td><strong>73</strong></td><td>Item interrater reliability 0.9 (1997 study)</td></tr>
+            <tr class="method-row"><td><span class="method-name">B. Medical procedures (last 14 days)</span></td><td>12</td><td>IV, dialysis, ostomy, oxygen, ventilator, tracheostomy, tube feeding, catheter</td></tr>
+            <tr class="method-row highlight-row"><td><span class="method-name highlight">Total</span></td><td><strong>85</strong></td><td>No income, asset or family items</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">The decision rule</h2>
+      <p>The paper gives no equation. Below is Claude's schematic of the logic it describes: per-category <span class="term" data-definition="A regression tree (CART) splits people into groups by asking yes/no questions about their attributes, for example 'can walk unaided?'. Each final group (leaf) gets a predicted value, here minutes of care. It is easy to explain and handles interactions automatically.">tree-regression</span> estimates, summed, then cut at fixed thresholds.</p>
+      <div class="formula-block">
+        <div class="formula-original">
+          <span class="formula-label">Schematic (Claude's reconstruction)</span>
+          <div class="formula-math">T = Σ<sub>k=1..9</sub> tree<sub>k</sub>(s<sub>1</sub>, …, s<sub>7</sub>, m) &nbsp;→&nbsp; Level = cut(T; 25, 30, 50, 70, 90, 110)</div>
+        </div>
+        <div class="formula-explanation">
+          <span class="formula-label">What it means</span>
+          <div class="formula-line"><span class="formula-symbol">s₁ … s₇</span><span class="formula-english">The applicant's standardized scores on the 7 physical/mental dimensions.</span></div>
+          <div class="formula-line"><span class="formula-symbol">m</span><span class="formula-english">Use of the 12 medical procedures.</span></div>
+          <div class="formula-line"><span class="formula-symbol">tree<sub>k</sub>( )</span><span class="formula-english">A regression tree for care category k. It predicts how many minutes per day an "ideal" institution would spend on this person. Trees were fitted on the 1995 time-study data.</span></div>
+          <div class="formula-line"><span class="formula-symbol">k = 1..9</span><span class="formula-english">Nine care categories. The paper lists: grooming/bathing, eating, toileting, transferring, IADL assistance, behavioural problems, rehabilitation, medical services. "Eating" appears twice, so only 8 are named; the ninth is unclear.</span></div>
+          <div class="formula-line"><span class="formula-symbol">T</span><span class="formula-english">Total estimated care minutes per day. This is the standardized unit of need (principle 3).</span></div>
+          <div class="formula-line"><span class="formula-symbol">cut( )</span><span class="formula-english">Thresholds from Table 2. Exception: under 25 minutes still gets "need support" if estimated rehab or IADL time exceeds 10 minutes.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Seven levels and what they buy (Table 2)</h2>
+      <div class="comparison-table-container">
+        <table class="comparison-table level-table">
+          <thead><tr><th>Level</th><th>Care minutes/day</th><th>Home &amp; community ceiling ($/month)</th><th>Institutional ($/month)</th></tr></thead>
+          <tbody>
+            <tr class="method-row"><td>Not eligible</td><td>≤ 25</td><td>0</td><td>Not eligible</td></tr>
+            <tr class="method-row"><td>Need support</td><td>&lt; 30</td><td>578</td><td>Not eligible</td></tr>
+            <tr class="method-row"><td>Level 1</td><td>&lt; 50</td><td>1,550</td><td>2,299</td></tr>
+            <tr class="method-row highlight-row"><td>Level 2</td><td>&lt; 70</td><td>1,821</td><td>2,607</td></tr>
+            <tr class="method-row"><td>Level 3</td><td>&lt; 90</td><td>2,500</td><td>3,275</td></tr>
+            <tr class="method-row"><td>Level 4</td><td>&lt; 110</td><td>2,860</td><td>3,558</td></tr>
+            <tr class="method-row"><td>Level 5</td><td>≥ 110</td><td>3,349</td><td>3,813</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="src">$1 = 107 yen. Institutional figures are per-diem rates for LTC medical facilities (1:3 staffing) × 30. Users pay 10% within the ceiling and 100% above it.</p>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Hana's journey (Appendix 1)</h2>
+      <p>Hana, 88, has severe arthritis and heart failure and lives with her eldest son and his wife. The steps follow the paper's appendix; the dialogue is invented.</p>
+      <div class="chat-window" id="chat-hana">
+        <div class="chat-messages">
+          <div class="chat-message" data-sender="hana">
+            <div class="chat-avatar" style="background: var(--color-actor-1)">Ha</div>
+            <div class="chat-bubble"><span class="chat-sender">Hana</span><p>I need help walking, toileting, bathing and changing clothes. I've called the city.</p></div>
+          </div>
+          <div class="chat-message" data-sender="nurse">
+            <div class="chat-avatar" style="background: var(--color-actor-2)">PH</div>
+            <div class="chat-bubble"><span class="chat-sender">Public health nurse (assessor)</span><p>I'll visit and go through the questionnaire: movement, daily activities, memory, behaviour, medical procedures. I'll add my own notes.</p></div>
+          </div>
+          <div class="chat-message" data-sender="computer">
+            <div class="chat-avatar" style="background: var(--color-actor-3)">PC</div>
+            <div class="chat-bubble"><span class="chat-sender">Computer model</span><p>Scores in, minutes estimated across the care categories. The total sets a provisional level, which goes to the board.</p></div>
+          </div>
+          <div class="chat-message" data-sender="board">
+            <div class="chat-avatar" style="background: var(--color-actor-4)">CB</div>
+            <div class="chat-bubble"><span class="chat-sender">Certification Board</span><p>With the physician's statement and the assessor's notes in front of us, we certify Level 2. That gives a ceiling of $1,821 a month for home services. She hears back within a month.</p></div>
+          </div>
+          <div class="chat-message" data-sender="cm">
+            <div class="chat-avatar" style="background: var(--color-actor-5)">CM</div>
+            <div class="chat-bubble"><span class="chat-sender">Care manager</span><p>Proposed plan: home help 1 hour twice a week ($301), bathing once a month ($117), wheelchair rental ($50), care plan ($80).</p></div>
+          </div>
+          <div class="chat-message" data-sender="hana">
+            <div class="chat-avatar" style="background: var(--color-actor-1)">Ha</div>
+            <div class="chat-bubble"><span class="chat-sender">Hana</span><p>My family will help with the rest, so I'll stay below the maximum and keep my copayment low, about $55 a month. Now I can get around the house on my own in the wheelchair.</p></div>
+          </div>
+        </div>
+        <div class="chat-typing">
+          <div class="chat-avatar" id="chat-hana-typing-avatar">…</div>
+          <div class="chat-typing-dots"><span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span></div>
+        </div>
+        <div class="chat-controls">
+          <button class="btn btn-primary chat-next-btn">Next message</button>
+          <button class="btn chat-all-btn">Play all</button>
+          <button class="btn chat-reset-btn">Reset</button>
+          <span class="chat-progress"></span>
+        </div>
+      </div>
+      <div class="callout callout-warning">
+        <span class="callout-icon">🔎</span>
+        <div class="callout-content">
+          <span class="callout-title">Arithmetic check (Claude)</span>
+          <p>The four itemised fees add up to $548, but the paper reports a total of $553. The $55 copayment matches 10% of either figure. The paper does not say whether the care-plan fee carries a copayment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="module-5">
+  <div class="module-content">
+    <header class="module-header">
+      <span class="module-number">05</span>
+      <h1 class="module-title">Evidence and early results</h1>
+      <p class="module-subtitle">How well the algorithm matched human judgment, and what happened in the first three years.</p>
+    </header>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Key numbers</h2>
+      <div class="badge-list">
+        <div class="badge-item"><span class="badge-code">175,129</span><span class="badge-desc">seniors in the 1996–98 pilot, all municipalities</span></div>
+        <div class="badge-item"><span class="badge-code">0.9</span><span class="badge-desc">item interrater reliability (1997)</span></div>
+        <div class="badge-item"><span class="badge-code">71.5% → 75.3%</span><span class="badge-desc">computer–professional concordance, 1996 → 1997</span></div>
+        <div class="badge-item"><span class="badge-code">~70%</span><span class="badge-desc">board agreed with the computer, first 3 years</span></div>
+        <div class="badge-item"><span class="badge-code">2.0 M → 3.5 M</span><span class="badge-desc">certified beneficiaries, 2000 → Dec 2003</span></div>
+        <div class="badge-item"><span class="badge-code">⅓</span><span class="badge-desc">actual demand vs. if everyone used their full ceiling</span></div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <div class="ablation-container">
+        <h3>How often humans agree with the machine</h3>
+        <p class="ablation-intro">This paper has no ablation study. In its place: the agreement figures it reports. The gap is how often a human would have decided differently.</p>
+        <div class="ablation-chart">
+          <div class="ablation-bar-group">
+            <span class="ablation-label">Interrater (item)</span>
+            <div class="ablation-bar-track">
+              <div class="ablation-bar fill-full" style="width: 90%"><span class="ablation-value">0.9</span></div>
+            </div>
+          </div>
+          <div class="ablation-bar-group">
+            <span class="ablation-label">Pilot 1996</span>
+            <div class="ablation-bar-track">
+              <div class="ablation-bar fill-remove" style="width: 71.5%"><span class="ablation-value">71.5%</span></div>
+              <div class="ablation-drop-marker" style="left: 71.5%"><span class="ablation-drop-label">28.5% differ</span></div>
+            </div>
+          </div>
+          <div class="ablation-bar-group">
+            <span class="ablation-label">Pilot 1997</span>
+            <div class="ablation-bar-track">
+              <div class="ablation-bar fill-remove" style="width: 75.3%"><span class="ablation-value">75.3%</span></div>
+              <div class="ablation-drop-marker" style="left: 75.3%"><span class="ablation-drop-label">24.7% differ</span></div>
+            </div>
+          </div>
+          <div class="ablation-bar-group">
+            <span class="ablation-label">Board 2000–03</span>
+            <div class="ablation-bar-track">
+              <div class="ablation-bar fill-remove" style="width: 70%"><span class="ablation-value">70%</span></div>
+              <div class="ablation-drop-marker" style="left: 70%"><span class="ablation-drop-label">30% changed</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="ablation-insight">
+          <span class="insight-icon">💡</span>
+          <strong>Reading this:</strong> Assessors agree with each other on individual items (0.9). But in roughly 1 case in 4 to 1 in 3, the computer's level differs from what professionals decide. The board is the safety valve, and it most often moves people <em>up</em>. The paper gives no kappa, no direction breakdown for the pilot, and no link to outcomes.
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">What the board catches that the algorithm misses</h2>
+      <p>The paper's examples of upgrades come from the assessor's free-text notes:</p>
+      <div class="step-cards">
+        <div class="step-card"><div class="step-num">↑</div><div class="step-body"><strong>Fluctuating ability</strong><p>The computer says "independent", but the assessor notes the person's abilities fluctuate.</p></div></div>
+        <div class="step-card"><div class="step-num">↑</div><div class="step-body"><strong>Environment</strong><p>The person lives in a rural area with no grocery stores.</p></div></div>
+        <div class="step-card"><div class="step-num">↑</div><div class="step-body"><strong>Household risk</strong><p>The person lives with a violent alcoholic spouse.</p></div></div>
+      </div>
+      <div class="callout callout-info">
+        <span class="callout-icon">🧩</span>
+        <div class="callout-content">
+          <span class="callout-title">Notice the paradox</span>
+          <p>The algorithm deliberately excludes family and housing. Yet two of the three upgrade examples are exactly that: environment and household. Social context comes back in through the human review layer.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Reported successes, first 3 years</h2>
+      <div class="icon-rows">
+        <div class="icon-row"><div class="icon-circle">✅</div><div><strong>Accepted</strong><p>The public accepted needs certification. Early anxiety among seniors and physicians about computer assessment faded.</p></div></div>
+        <div class="icon-row"><div class="icon-circle">💴</div><div><strong>On budget</strong><p>Overall spending stayed within budget, partly because premiums were adjusted to each municipality's LTC resources.</p></div></div>
+        <div class="icon-row"><div class="icon-circle">🚪</div><div><strong>Better access</strong><p>Access improved, especially for middle- and upper-income seniors. Low-income people who used to get free care now pay 10%, but municipalities subsidise them.</p></div></div>
+        <div class="icon-row"><div class="icon-circle">🏗️</div><div><strong>Supply responded</strong><p>Providers entered the market quickly to meet demand.</p></div></div>
+        <div class="icon-row"><div class="icon-circle">🖧</div><div><strong>National data network</strong><p>Every initial and final assessment is stored centrally. This standardizes assessment and lets MHLW monitor each municipality.</p></div></div>
+      </div>
+      <p>The authors call this "an important shift from a health and welfare policy based on symbiotic relationships with pressure groups to one based on scientific data."</p>
+    </div>
+  </div>
+</section>
+
+<section class="module" id="module-6">
+  <div class="module-content">
+    <header class="module-header">
+      <span class="module-number">06</span>
+      <h1 class="module-title">Limits, politics and lessons</h1>
+      <p class="module-subtitle">The challenges the authors name, a critical read, and what this paper offers WP3.</p>
+    </header>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Challenges named by the authors</h2>
+      <div class="pattern-cards">
+        <div class="pattern-card">
+          <div class="pattern-icon">🗺️</div>
+          <div class="pattern-title">Local variation</div>
+          <p class="pattern-desc">Assessment practice and service availability still vary. Some powerful local leaders boast that they can raise applicants' levels. MHLW uses the central database to flag municipalities with high initial-vs-final disagreement for investigation.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">📈</div>
+          <div class="pattern-title">Rising demand and institutionalisation</div>
+          <p class="pattern-desc">Stigma is gone, so use keeps rising, especially for institutions. Out-of-pocket institutional costs ($450–600/month) can be cheaper than living at home, which builds in an incentive to institutionalise.</p>
+        </div>
+        <div class="pattern-card">
+          <div class="pattern-icon">🎭</div>
+          <div class="pattern-title">Politics in the algorithm</div>
+          <p class="pattern-desc">In 2003 a dementia indicator was added. Institutional providers demanded it in exchange for lower fees. Because fees rise with level, providers now have an incentive to label residents demented. About 80% of institutional residents are already classed as demented.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">The authors' lessons</h2>
+      <div class="step-cards">
+        <div class="step-card"><div class="step-num">1</div><div class="step-body"><strong>Design the incentives</strong><p>Seniors, families, providers and insurers should all have reasons to promote functional independence rather than dependence on institutions and government. Rising institutional use was "not an inevitable consequence of LTCI" but a result of its design.</p></div></div>
+        <div class="step-card"><div class="step-num">2</div><div class="step-body"><strong>Assess potential, not just deficit</strong><p>Add an assessment item for expected or potential improvement in function and health. Promote preventive services and reward providers whose clients improve.</p></div></div>
+        <div class="step-card"><div class="step-num">3</div><div class="step-body"><strong>Stay empirical</strong><p>Develop and revise the assessment from data. Build an information system that accumulates implementation data.</p></div></div>
+        <div class="step-card"><div class="step-num">4</div><div class="step-body"><strong>Support family care</strong><p>Strengthen family caregiving and self-care that promote disability-free life, alongside relieving family burden.</p></div></div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">A critical read (Claude's appraisal)</h2>
+      <div class="callout callout-warning claude-note">
+        <span class="callout-icon">🧐</span>
+        <div class="callout-content">
+          <span class="callout-title">Points to weigh. These are Claude's, not the authors'.</span>
+          <p>• <strong>Insider account.</strong> The first author built the underlying model, and the paper reports no conflict-of-interest statement.<br>
+          • <strong>Validity is agreement only.</strong> Concordance with professionals (71.5–75.3%) is the only validity evidence. There is no kappa, no breakdown of disagreements, and no link to outcomes such as unmet need or caregiver burden.<br>
+          • <strong>"Ideal" institutional care as the yardstick.</strong> The minutes come from recommended high-quality institutions, and home-care data were discarded. The model measures what a good institution would spend, not what a person at home needs.<br>
+          • <strong>Deficit-based by construction.</strong> Every item is a deficit or a procedure. The authors themselves call for an item on potential for improvement.<br>
+          • <strong>Small inconsistencies.</strong> The 2004 budget in dollars is off by about tenfold. "Eating" is listed twice among the nine care categories. Hana's itemised fees add to $548, not $553.<br>
+          • <strong>Dated.</strong> Written before the 2006 revision. Later reforms are outside this paper: check current MHLW sources before citing details of today's system.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Why it matters for WP3 (Claude's suggestions, for Nontakorn to judge)</h2>
+      <div class="callout callout-accent claude-note">
+        <span class="callout-icon">🧭</span>
+        <div class="callout-content">
+          <span class="callout-title">Tsutsui &amp; Muramatsu 2005 is seed paper #1 ("core example")</span>
+          <p>Possible uses, not team decisions:<br>
+          • <strong>Worked extraction example.</strong> It reports domains (7 physical/mental + medical procedures), explicit exclusions (income, assets, family), tool (85 items), assessor (trained lay official), output (7 levels via care minutes), human override (board), and revision cycle (5 years by law). It does <em>not</em> report a reassessment interval. That makes it a good test row for the extraction form.<br>
+          • <strong>A clear contrast case for TN-iLTC.</strong> Japan deliberately took carer context <em>out</em> of the algorithm, but it came back through the board (rural isolation, violent spouse). That speaks directly to the project's need-based idea of weighing carer context and burden.<br>
+          • <strong>Recovery potential.</strong> The authors' call for a "potential for improvement" item is an early statement of the recovery-potential criterion in the TN-iLTC framing.<br>
+          • <strong>Search terms.</strong> The paper uses "care-needs certification" and "needs assessment". It is the reason certif* stays in the search string.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <h2 class="screen-heading">Check your understanding</h2>
+      <div class="quiz-container" id="quiz-final">
+        <div class="quiz-question-block" data-correct="b" data-explanation-right="Eligibility rests strictly on physical and mental status. Income, assets and family availability were removed." data-explanation-wrong="The paper says income, assets and family availability are no longer relevant. Only physical and mental status counts.">
+          <p class="quiz-question">1. Which factor does Japan's LTCI eligibility rule take into account?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="a" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Household income and assets</button>
+            <button class="quiz-option" data-value="b" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Physical and mental status only</button>
+            <button class="quiz-option" data-value="c" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Whether family can provide care</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <div class="quiz-question-block" data-correct="c" data-explanation-right="The model regresses care minutes (from the 1995 institutional time study) on physical and mental attributes, then sums the minutes into a level." data-explanation-wrong="The standard unit is estimated care minutes per day, predicted by tree regression from the institutional time study.">
+          <p class="quiz-question">2. What standardized unit does the computer use to assign a level?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="a" onclick="selectOption(this)"><span class="quiz-option-radio"></span>A Barthel-style ADL score</button>
+            <button class="quiz-option" data-value="b" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Expected cost per month in yen</button>
+            <button class="quiz-option" data-value="c" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Estimated minutes of care per day</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <div class="quiz-question-block" data-correct="a" data-explanation-right="RUG-III leaned on therapist-delivered rehab, which Japanese NHs rarely offered, and needed MDS-trained nurses Japan did not have." data-explanation-wrong="The reasons were poor fit to Japanese resource use (rehab-driven groups) and the shortage of MDS-trained nurses.">
+          <p class="quiz-question">3. Why did MHLW reject RUG-III?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="a" onclick="selectOption(this)"><span class="quiz-option-radio"></span>It fit Japanese resource use poorly and needed specially trained nurses</button>
+            <button class="quiz-option" data-value="b" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Its licence was too expensive</button>
+            <button class="quiz-option" data-value="c" onclick="selectOption(this)"><span class="quiz-option-radio"></span>It ignored medical procedures</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <div class="quiz-question-block" data-correct="b" data-explanation-right="The board most commonly upgrades, using assessor notes and the physician statement to capture needs the computer misses." data-explanation-wrong="The board reviews every case and most often moves the level up, for example for fluctuating ability or a risky home situation.">
+          <p class="quiz-question">4. What does the Certification Board most commonly do when it disagrees with the computer?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="a" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Downgrades the level to save money</button>
+            <button class="quiz-option" data-value="b" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Upgrades the level for needs the computer missed</button>
+            <button class="quiz-option" data-value="c" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Sends the case back for a new questionnaire</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <div class="quiz-question-block" data-correct="c" data-explanation-right="Fees rise with level, so after institutional fee cuts, a dementia flag that lifts levels lets providers recover revenue. That is an incentive to label residents demented." data-explanation-wrong="The concern is a perverse incentive. Fees rise with level, so providers gain by having residents labelled demented.">
+          <p class="quiz-question">5. Why do the authors worry about the 2003 dementia indicator?</p>
+          <div class="quiz-options">
+            <button class="quiz-option" data-value="a" onclick="selectOption(this)"><span class="quiz-option-radio"></span>It made the questionnaire too long</button>
+            <button class="quiz-option" data-value="b" onclick="selectOption(this)"><span class="quiz-option-radio"></span>Physicians refused to use it</button>
+            <button class="quiz-option" data-value="c" onclick="selectOption(this)"><span class="quiz-option-radio"></span>It gives institutions a financial incentive to label residents demented</button>
+          </div>
+          <div class="quiz-feedback"></div>
+        </div>
+
+        <button class="quiz-check-btn" onclick="checkQuiz('quiz-final')">Check answers</button>
+        <button class="quiz-reset-btn" onclick="resetQuiz('quiz-final')">Reset</button>
+      </div>
+    </div>
+
+    <div class="screen animate-in">
+      <p class="src">Source: Tsutsui T, Muramatsu N. Care-needs certification in the long-term care insurance system of Japan. J Am Geriatr Soc. 2005;53(3):522–527. doi:10.1111/j.1532-5415.2005.53175.x · PMID 15743300. Course generated 31 Oct 2026.</p>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+</body>
+</html>

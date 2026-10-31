@@ -235,7 +235,7 @@ LTC: การดูแลระยะยาว, ผู้สูงอายุ�
 ### 10 seed papers (PMIDs)
 | # | Paper | PMID | Note |
 |---|---|---|---|
-| 1 | Tsutsui & Muramatsu 2005 — Japan LTCI certification | 15743300 | Core example |
+| 1 | Tsutsui & Muramatsu 2005 — Japan LTCI certification | 15743300 | Core example; course + deck in outputs/paper-to-course/Tsutsui_2005/ |
 | 2 | Fries 2002 — MI Choice screen (κ=0.62 vs care managers; ADL/IADL-only κ<0.40) | 12145374 | |
 | 3 | Fries 2004 — telephone vs in-person MI Choice | 15498843 | Screen-then-assess workflow |
 | 4 | Kim 2013 — Korean Motor Impairment Scale | 23869339 | Hard case |
@@ -365,5 +365,6 @@ Dropped since 2 Sep draft: inter-rater agreement, standard-case testing, case-vi
 - **This folder:** `~/Downloads/01 SiHP Projects/TN-iLTC (LTC - Aj Harit)/` — Background, Meetings, Proposal (สวรส.), WP3 Systematic Search, Workshop 15 Oct, outputs/reports/research_notes, WP3 update decks (8 Oct, 22 Oct).
 - **`_md/`** (31 Oct): Markdown copies of all 44 PDF/Word/PowerPoint/Excel files at mirrored paths, for GitHub / Claude Code cloud sessions. Originals are authoritative; images dropped; Thai tone marks in 3 PDFs auto-repaired. Index and refresh command in `_md/README.md`.
 - **Working log (Claude Doc, claude.ai):** https://claude.ai/code/artifact/b4492886-ec45-4668-8564-a14adb279ca0 — tabs: working log, Proposal in my own words, 8 Oct WP3 brief, WP3 walkthrough, Q1 search strategy (draft), WP3 SR plan. This summary captures its content up to 31 Oct; it won't update itself from Claude Code.
+- **`outputs/paper-to-course/Tsutsui_2005/`** (31 Oct): study course on seed paper #1 — `index.html` (interactive, single file), `README.md` (text version), `slides.pptx` (16-slide journal-club deck). Includes Claude's critical appraisal and possible WP3 uses (marked as suggestions, not decisions). Rebuild: `bash build.sh`.
 - **claude.ai Project "LTC Aj Harisd":** proposal (11 Sep), timeline (23 Sep), WHO draft, WHO 2024, UHC report, two policy briefs.
 - **Draw.io workflow:** Meetings/TN-iLTC workflow.drawio and draft diagrams (7–8 Oct); a revised copy also sits in a shared Google Drive folder.
