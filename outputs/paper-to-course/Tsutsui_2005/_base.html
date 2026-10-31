@@ -13,34 +13,25 @@
   <link rel="stylesheet" href="styles.css">
   <!-- INLINE_CSS -->
 
-  <!-- Course-level overrides: accent (teal), chat starts empty, dark mode tokens -->
+  <!-- Course-level overrides: accent (teal), chat starts empty, always light theme -->
   <style>
     :root {
       --color-accent:       #2A7B9B;
       --color-accent-hover: #1F6280;
       --color-accent-light: #E4F2F7;
       --color-accent-muted: #5A9DB8;
+      --color-text-muted:   #77706A;
     }
     .chat-window .chat-message,
     .chat-window .chat-typing { display: none; }
     .claude-note { border-left-style: dashed; }
     .level-table td:first-child { font-weight: 700; font-family: var(--font-display); }
     .src { font-size: var(--text-xs); color: var(--color-text-muted); font-family: var(--font-mono); }
+    .formula-symbol { color: var(--color-accent-hover); font-weight: 600; }
+    .cell-check { color: var(--color-success); }
+    .cell-partial { color: var(--color-error); }
+    :root { color-scheme: light; }
     body { background: var(--color-bg); color: var(--color-text); }
-    @media (prefers-color-scheme: dark) {
-      :root:not([data-theme="light"]) {
-        --color-bg: #191817; --color-bg-warm: #23211F; --color-surface: #1F1E1C; --color-surface-warm: #262422;
-        --color-text: #ECE8E2; --color-text-secondary: #B8B1A8; --color-text-muted: #8C857C;
-        --color-border: #3A3632; --color-border-light: #2E2B28;
-        --color-accent-light: #16313B; --color-success-light: #15301F; --color-error-light: #3A1C1C; --color-info-light: #16313B;
-      }
-    }
-    :root[data-theme="dark"] {
-      --color-bg: #191817; --color-bg-warm: #23211F; --color-surface: #1F1E1C; --color-surface-warm: #262422;
-      --color-text: #ECE8E2; --color-text-secondary: #B8B1A8; --color-text-muted: #8C857C;
-      --color-border: #3A3632; --color-border-light: #2E2B28;
-      --color-accent-light: #16313B; --color-success-light: #15301F; --color-error-light: #3A1C1C; --color-info-light: #16313B;
-    }
   </style>
 
   <script src="main.js" defer></script>
