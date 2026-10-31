@@ -252,7 +252,7 @@ The 15 Oct workshop deck used a slightly different 10 (adds Tsugihashi 2021 ZEVI
 1. Check MeSH sub-terms under intermediate care (ICU issue); keep Disability Evaluation; try exporting.
 2. Add keywords from titles of missed known papers (e.g. RAI); else citation searching.
 3. Trial Google Scholar, ThaiLIS, ThaiJO and report counts.
-4. Send final search terms to the group (26–30 Oct). *Status 31 Oct: Nontakorn still refining the terms; not sent yet.*
+4. Send final search terms to the group (26–30 Oct). *Status 31 Oct: Nontakorn still refining the terms; not sent yet.* He is rebuilding the terms himself, one concept at a time, starting from the known papers' MeSH terms and keywords, with a reason and a test for every term. Working file: `WP3 Systematic Search/WP3 search term table (31 Oct).xlsx`, with tabs for each concept (P1, P2, E, O, Named tools) plus Known papers, Combine and Search log.
 5. Lock terms (first week of Nov).
 
 **Final string location (checked 31 Oct):** the accepted 22 Oct search (2,943 hits) is D1 in `WP3 Systematic Search/Q1 search v3.2 + ChatGPT prompt (22 Oct).txt`. It has no named tools in E. "Q1 PECO + PubMed search v2 (22 Oct).md" is the earlier draft that still has them, and it now carries a note saying so. Use v3.2 D1 as the starting point for the terms sent to the group.
