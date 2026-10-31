@@ -255,6 +255,8 @@ The 15 Oct workshop deck used a slightly different 10 (adds Tsugihashi 2021 ZEVI
 4. Send final search terms to the group (26–30 Oct).
 5. Lock terms (first week of Nov).
 
+**Final string location (checked 31 Oct):** the accepted 22 Oct search (2,943 hits) is D1 in `WP3 Systematic Search/Q1 search v3.2 + ChatGPT prompt (22 Oct).txt`. It has no named tools in E. "Q1 PECO + PubMed search v2 (22 Oct).md" is the earlier draft that still has them, and it now carries a note saying so. Use v3.2 D1 as the starting point for the terms sent to the group.
+
 ---
 
 ## 7. Thai baseline facts (for WP3 and WP1)

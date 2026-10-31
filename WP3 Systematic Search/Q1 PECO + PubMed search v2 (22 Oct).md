@@ -1,6 +1,8 @@
 # WP3 Q1 — PECO and PubMed search v2 (22 Oct 2026)
 Built on P'Roong's "LTC_search strategy.xlsx" and the 15 Oct workshop. Draft for the 22 Oct meeting.
 
+> **Note (31 Oct):** this is the earlier 22 Oct draft. Its E block still lists named tools (interRAI, MDS-HC, RUG-III, Kihon Checklist, AN-ACC, Pflegegrad, etc.). The accepted version (2,943 hits) has no named tools in E. The exact lines are D1 in "Q1 search v3.2 + ChatGPT prompt (22 Oct).txt".
+
 ## Q1 (locked)
 What eligibility criteria and assessment tools do long-term care systems use to decide who enters LTC and at what care level, including people moving from intermediate or post-acute care, and what evidence supports them?
 
