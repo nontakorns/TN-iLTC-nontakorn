@@ -271,6 +271,13 @@ Methods sources:
 
 No existing SR answers Q1 directly.
 
+**Nontakorn's take on Fang 2024 (1 Nov):**
+- The gap is thin.
+- The conclusions ("A, B frequently assessed") lead nowhere concrete.
+- The supplements are the most useful part. Their search is simpler than ours. Their extraction table is long because it serves both quantitative and qualitative conclusions. They searched several databases.
+
+Next step (his): list the MeSH terms of the known papers on the Known papers tab, then sort them into P1, P2, E and O.
+
 **Final string location (checked 31 Oct):** the accepted 22 Oct search (2,943 hits) is D1 in `WP3 Systematic Search/Q1 search v3.2 + ChatGPT prompt (22 Oct).txt`. It has no named tools in E. "Q1 PECO + PubMed search v2 (22 Oct).md" is the earlier draft that still has them, and it now carries a note saying so. Use v3.2 D1 as the starting point for the terms sent to the group.
 
 ---
