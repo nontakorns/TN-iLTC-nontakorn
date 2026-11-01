@@ -258,7 +258,8 @@ The 15 Oct workshop deck used a slightly different 10 (adds Tsugihashi 2021 ZEVI
 **Learning the method (1 Nov):** Nontakorn is still thinking in the shape of a clinical drug-trial SR. Reviews to learn from:
 - ElMokhallalati 2020, Palliat Med: SR of palliative care screening tools. Same method shape as Q1.
 - Fang 2024, Healthcare 12:2468: SR of home-care assessment tools, with domains mapped to the ICF. Closest topic.
-- PubMed 39675729: 27-country study of LTC needs-assessment instruments (probably the JAMDA 2024 paper).
+- PubMed 39675729: 27-country study of LTC needs-assessment instruments. Confirmed 1 Nov as Villalobos Dintrans, JAMDA 2025;26(2):105409 (online Dec 2024), i.e. the JAMDA 2024 paper.
+- Fang 2024 methods, from the full text (read 1 Nov): two reviewers screened independently. The extraction form had four parts: study characteristics, sample characteristics, assessments (tool, domains, measurements), key findings. Quality was appraised with MMAT 2018. Synthesis = domains sorted into WHO ICF categories.
 
 Methods sources:
 - Munn 2018: typology of review types.
